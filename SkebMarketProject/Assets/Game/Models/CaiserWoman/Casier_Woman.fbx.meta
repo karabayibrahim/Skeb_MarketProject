@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 75a86eeecba0dca4f955f811f9c904a1
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.3
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 66d8cbaf017586c45baaea2b0334db87
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Casier_Woman(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sac
+      parentName: Casier_Woman(Clone)
+      position: {x: -0.017122976, y: 2.0019636, z: -0.09628856}
+      rotation: {x: 0.00000014106497, y: 0, z: -0, w: 1}
+      scale: {x: 93.267426, y: 93.267426, z: 93.267426}
+    - name: sac2
+      parentName: Casier_Woman(Clone)
+      position: {x: 0.015126527, y: 1.9514803, z: -0.1145866}
+      rotation: {x: 0.00000014106497, y: -5.8207633e-11, z: -3.2014214e-10, w: 1}
+      scale: {x: 93.267426, y: 93.267426, z: 93.267426}
+    - name: eye2
+      parentName: Casier_Woman(Clone)
+      position: {x: 0.06254284, y: 1.9572506, z: 0.06864037}
+      rotation: {x: 0.00000014106497, y: 0, z: -0, w: 1}
+      scale: {x: 93.267426, y: 93.267426, z: 93.267426}
+    - name: eye
+      parentName: Casier_Woman(Clone)
+      position: {x: -0.06251283, y: 1.9572742, z: 0.06864036}
+      rotation: {x: 0.00000014106497, y: 0, z: -0, w: 1}
+      scale: {x: 93.267426, y: 93.267426, z: 93.267426}
+    - name: surat
+      parentName: Casier_Woman(Clone)
+      position: {x: -0.0000003232447, y: 1.8735143, z: 0.014804628}
+      rotation: {x: 0.00000014106499, y: 8.881788e-15, z: -6.9423617e-15, w: 1}
+      scale: {x: 0.9326742, y: 0.93267393, z: 0.93267393}
+    - name: "ayakkab\u0131"
+      parentName: Casier_Woman(Clone)
+      position: {x: 0.0000025077547, y: 0.101083845, z: 0.035504065}
+      rotation: {x: -0.7070053, y: -0.011978538, z: -0.01197854, w: 0.7070053}
+      scale: {x: 24.504818, y: 53.259933, z: 53.259926}
+    - name: tshort
+      parentName: Casier_Woman(Clone)
+      position: {x: 0.00006897979, y: 1.3867666, z: 0.01222337}
+      rotation: {x: -0.69900006, y: 0, z: -0, w: 0.7151216}
+      scale: {x: 4.98561, y: 5.3468447, z: 4.9858}
+    - name: kas
+      parentName: Casier_Woman(Clone)
+      position: {x: 0.00000058313634, y: 1.9936509, z: 0.07268586}
+      rotation: {x: 0.00000014106499, y: 8.881788e-15, z: -6.9423617e-15, w: 1}
+      scale: {x: 0.9326742, y: 0.93267393, z: 0.93267393}
+    - name: govde
+      parentName: Casier_Woman(Clone)
+      position: {x: 0.000068916175, y: 1.3963003, z: -0.0671353}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 193.12349, y: 193.12349, z: 193.12349}
+    - name: tshort.001
+      parentName: Casier_Woman(Clone)
+      position: {x: 0.00002687994, y: 1.4764446, z: -0.008034459}
+      rotation: {x: -0.69900006, y: 0, z: -0, w: 0.7151216}
+      scale: {x: 4.98561, y: 5.3468447, z: 4.9858}
+    - name: short.001
+      parentName: Casier_Woman(Clone)
+      position: {x: -0.00002648919, y: 0.98397565, z: -0.030560661}
+      rotation: {x: 0.004158903, y: 0.99094146, z: 0.031589143, w: 0.13046005}
+      scale: {x: 0.709744, y: 1.1886396, z: 0.70974386}
+    - name: Plane.001
+      parentName: Casier_Woman(Clone)
+      position: {x: -0.118907444, y: 1.5648764, z: 0.109552}
+      rotation: {x: -0.4140127, y: 0.010255007, z: -0.022538878, w: 0.9099343}
+      scale: {x: 100.00001, y: 100, z: 100.00001}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.3
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
