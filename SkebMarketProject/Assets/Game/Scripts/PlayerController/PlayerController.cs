@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             _anim.SetBool("Take", false);
             _myProduct.GetComponent<Rigidbody>().isKinematic = false;
+            _myProduct.GetComponent<Product>().enabled = false;
             _myProduct.transform.SetParent(null);
             _myProduct = null;
         }

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -126,7 +126,7 @@ namespace Obi
             for (int i = 0; i < implementations.Count; ++i)
             {
                 implementations[i].SetColliders(colliderShapes, colliderAabbs, colliderTransforms, 0);
-                implementations[i].UpdateWorld();
+                implementations[i].UpdateWorld(0);
             }
 
             // Invalidate all handles:
@@ -354,13 +354,32 @@ namespace Obi
             }
         }
 
-
-        public void UpdateWorld()
+        public void UpdateColliders()
         {
             // update all colliders:
             for (int i = 0; i < colliderHandles.Count; ++i)
                 colliderHandles[i].owner.UpdateIfNeeded();
+        }
 
+        public void UpdateRigidbodies(List<ObiSolver> solvers, float stepTime)
+        {
+            // reset all solver's delta buffers to zero:
+            foreach (ObiSolver solver in solvers)
+            {
+                if (solver != null && solver.initialized)
+                {
+                    solver.EnsureRigidbodyArraysCapacity(rigidbodyHandles.Count);
+                    solver.rigidbodyLinearDeltas.WipeToZero();
+                    solver.rigidbodyAngularDeltas.WipeToZero();
+                }
+            }
+
+            for (int i = 0; i < rigidbodyHandles.Count; ++i)
+                rigidbodyHandles[i].owner.UpdateIfNeeded(stepTime);
+        }
+
+        public void UpdateWorld(float deltaTime)
+        {
             for (int i = 0; i < implementations.Count; ++i)
             {
                 if (implementations[i].referenceCount > 0)
@@ -375,33 +394,16 @@ namespace Obi
                     implementations[i].SetHeightFieldData(heightFieldContainer.headers, heightFieldContainer.samples);
 
                     // update world implementation:
-                    implementations[i].UpdateWorld();
+                    implementations[i].UpdateWorld(deltaTime);
                 }
             }
-        }
-
-        public void UpdateRigidbodies(List<ObiSolver> solvers, float stepTime)
-        {
-            // reset all solver's delta buffers to zero:
-            foreach (ObiSolver solver in solvers)
-            {
-                if (solver != null)
-                {
-                    solver.EnsureRigidbodyArraysCapacity(rigidbodyHandles.Count);
-                    solver.rigidbodyLinearDeltas.WipeToZero();
-                    solver.rigidbodyAngularDeltas.WipeToZero();
-                }
-            }
-
-            for (int i = 0; i < rigidbodyHandles.Count; ++i)
-                rigidbodyHandles[i].owner.UpdateIfNeeded(stepTime);
         }
 
         public void UpdateRigidbodyVelocities(List<ObiSolver> solvers)
         {
             int count = 0;
             foreach (ObiSolver solver in solvers)
-                if (solver != null) count++;
+                if (solver != null && solver.initialized) count++;
 
             if (count > 0)
             {
@@ -415,7 +417,7 @@ namespace Obi
 
                     foreach (ObiSolver solver in solvers)
                     {
-                        if (solver != null)
+                        if (solver != null && solver.initialized)
                         {
                             linearDelta += solver.rigidbodyLinearDeltas[i] * rcpCount;
                             angularDelta += solver.rigidbodyAngularDeltas[i] * rcpCount;
