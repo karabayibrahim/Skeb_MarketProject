@@ -52,12 +52,13 @@ public class PlayerController : MonoBehaviour
         {
             _myProduct = product;
             _myProduct.transform.SetParent(Hand.transform);
+            _myProduct.GetComponent<Collider>().enabled = false;
             _myProduct.transform.position = _productPosition.position;
             _anim.SetBool("Take", true);
             _myProduct.Move = false;
-            gameObject.transform.DOMoveY(0.9f, 0.5f).OnComplete(() =>
+            gameObject.transform.DOMoveY(0.9f, 0.25f).OnComplete(() =>
             {
-                gameObject.transform.DOMoveY(1, 0.5f);
+                gameObject.transform.DOMoveY(1, 0.25f);
             });
         }
         
@@ -68,6 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             _anim.SetBool("Take", false);
             _myProduct.GetComponent<Rigidbody>().isKinematic = false;
+            _myProduct.GetComponent<Collider>().enabled = true;
             _myProduct.GetComponent<Product>().enabled = false;
             _myProduct.transform.SetParent(null);
             _myProduct = null;
