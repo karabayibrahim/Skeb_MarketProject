@@ -19,25 +19,29 @@ public class Casier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnAnimatorIK(int layerIndex)
     {
         if (_lefthand)
         {
-            _anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
+            _anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 0.5f);
             _anim.SetIKPosition(AvatarIKGoal.LeftHand, _selectObject.transform.position);
         }
         if (_righthand)
         {
-            _anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
+            _anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 0.5f);
             _anim.SetIKPosition(AvatarIKGoal.RightHand, _selectObject.transform.position);
         }
-        
+
     }
     private void ObjectSelect()
     {
+        if (GameManager.Instance.CurrentLevel.ProductManager.Products.Count>0)
+        {
+            _anim.CrossFade("Take", 0.01f);
+        }
         _selectObject = GameManager.Instance.CurrentLevel.ProductManager.Products[0].gameObject;
         GameManager.Instance.CurrentLevel.ProductManager.Products.Remove(GameManager.Instance.CurrentLevel.ProductManager.Products[0]);
         _lefthand = true;
@@ -54,7 +58,8 @@ public class Casier : MonoBehaviour
                 ObjectSelect();
             });
         });
+        _anim.CrossFade("Take", 0.01f);
     }
 
-    
+
 }
