@@ -21,7 +21,6 @@ public class Bag : MonoBehaviour
         if (other.gameObject.GetComponent<Product>() != null)
         {
             other.gameObject.GetComponent<Product>().InBag = true;
-            
         }
     }
 }
