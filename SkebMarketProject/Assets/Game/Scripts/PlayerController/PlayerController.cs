@@ -113,10 +113,12 @@ public class PlayerController : MonoBehaviour
         {
             _anim.SetBool("Take", false);
             _myProduct.Takeable = false;
+            _myProduct.Fall = true;
             _myProduct.GetComponent<Rigidbody>().isKinematic = false;
             _myProduct.GetComponent<Collider>().enabled = true;
             _myProduct.GetComponent<Product>().enabled = false;
             _myProduct.transform.SetParent(null);
+            _myProduct.transform.SetParent(GameManager.Instance.Bag.transform);
             _myProduct = null;
         }
     }

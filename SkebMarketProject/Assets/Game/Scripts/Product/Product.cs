@@ -8,6 +8,7 @@ public class Product : MonoBehaviour
     public bool Takeable = true;
     public bool InTake = false;
     public bool InBag = false;
+    public bool Fall = false;
     void Start()
     {
         
