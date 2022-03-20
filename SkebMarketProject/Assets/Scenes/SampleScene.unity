@@ -119956,8 +119956,8 @@ MonoBehaviour:
   _anim: {fileID: 743331859}
   _productPosition: {fileID: 1058352618}
   Hand: {fileID: 743331857}
-  HorizontalSpeed: -100
-  VerticalSpeed: 100
+  HorizontalSpeed: -50
+  VerticalSpeed: 50
   _movementClampNegative: -0.4
   _movementClampPositive: 0.4
   _movementClampNegativeVer: -2.5
