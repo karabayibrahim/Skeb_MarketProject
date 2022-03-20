@@ -5,6 +5,9 @@ using UnityEngine;
 public class Product : MonoBehaviour
 {
     public bool Move = false;
+    public bool Takeable = true;
+    public bool InTake = false;
+    public bool InBag = false;
     void Start()
     {
         

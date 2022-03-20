@@ -15,4 +15,13 @@ public class Bag : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Product>() != null)
+        {
+            other.gameObject.GetComponent<Product>().InBag = true;
+            
+        }
+    }
 }
