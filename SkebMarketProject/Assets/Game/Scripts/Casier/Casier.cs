@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using SA;
 public class Casier : MonoBehaviour
 {
     private Animator _anim;
@@ -35,7 +36,7 @@ public class Casier : MonoBehaviour
         if (_lefthand)
         {
             //LeftHand.transform.position = _selectObject.transform.position;
-            left = LeftHand.transform.DOMove(_selectObject.transform.position, 0.1f);
+            left = LeftHand.transform.DOMove(new Vector3(_selectObject.transform.position.x, _selectObject.transform.position.y + 0.1f, _selectObject.transform.position.z), 0.1f);
         }
         else
         {
@@ -44,7 +45,7 @@ public class Casier : MonoBehaviour
         if (_righthand)
         {
             //RightHand.transform.position = _selectObject.transform.position;
-            right = RightHand.transform.DOMove(_selectObject.transform.position, 0.1f);
+            right = RightHand.transform.DOMove(new Vector3(_selectObject.transform.position.x, _selectObject.transform.position.y+0.1f, _selectObject.transform.position.z), 0.1f);
         }
         else
         {
@@ -73,15 +74,18 @@ public class Casier : MonoBehaviour
             _selectObject = GameManager.Instance.CurrentLevel.ProductManager.Products[0].gameObject;
             GameManager.Instance.CurrentLevel.ProductManager.Products.Remove(GameManager.Instance.CurrentLevel.ProductManager.Products[0]);
             _lefthand = true;
-            _selectObject.transform.DOMove(_target.transform.position, 0.5f).OnComplete(() =>
+            LeftHand.transform.rotation = new Quaternion(0, -90f, 0, 0);
+            _selectObject.transform.DOMove(_target.transform.position, 1f).OnComplete(() =>
             {
                 int rndTarget = Random.Range(0, GameManager.Instance.CurrentLevel.Targets.Count);
                 _target2 = GameManager.Instance.CurrentLevel.Targets[rndTarget];
                 _lefthand = false;
+                _selectObject.GetComponent<Product>().BuyMethod();
                 left.Kill();
                 LeftHand.transform.DOLocalMove(leftPos.localPosition, 0.5f);
                 _righthand = true;
-                _selectObject.transform.DOMove(_target2.transform.position, 0.5f).OnComplete(() =>
+                RightHand.transform.eulerAngles = new Vector3(0, -90f, 0);
+                _selectObject.transform.DOMove(_target2.transform.position, 1f).OnComplete(() =>
                 {
                     _righthand = false;
                     right.Kill();
@@ -95,6 +99,7 @@ public class Casier : MonoBehaviour
                     else
                     {
                         ResetHandPos();
+                        GetComponent<FullBodyIKBehaviour>().fullBodyIK.bodyEffectors.hips.rotationEnabled = false;
                     }
                 });
             });

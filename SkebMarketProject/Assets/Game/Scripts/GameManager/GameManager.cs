@@ -6,6 +6,7 @@ public class GameManager : MonoSingleton<GameManager>
 {
     public Level CurrentLevel;
     public Bag Bag;
+    public CaseSystem CaseSystem;
     void Start()
     {
         

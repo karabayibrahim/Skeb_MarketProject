@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Obi;
 public class Bag : MonoBehaviour
 {
     public List<Product> MyProducts = new List<Product>();
@@ -21,13 +21,13 @@ public class Bag : MonoBehaviour
                 return;
             }
             _productCount= value;
-            myMaterial.color = new Color(myMaterial.color.r, myMaterial.color.g - 0.05f, myMaterial.color.b-0.05f,myMaterial.color.a);
-            if (ProductCount > 15f)
+            myMaterial.color = new Color(myMaterial.color.r, myMaterial.color.g - 0.5f, myMaterial.color.b-0.5f,myMaterial.color.a);
+            if (ProductCount > 3f)
             {
-                foreach (var item in MyProducts)
-                {
-                    item.GetComponent<Rigidbody>().mass = 10f;
-                }
+                //foreach (var item in MyProducts)
+                //{
+                //    item.GetComponent<Rigidbody>().mass = 10f;
+                //}
             }
         }
     }
@@ -58,5 +58,26 @@ public class Bag : MonoBehaviour
             }
             
         }
+    }
+
+    public void ShakeEffect()
+    {
+        StartCoroutine(ShakeTimer());
+    }
+    private IEnumerator ShakeTimer()
+    {
+        //GetComponent<ObiSolver>().gravity = new Vector3(0, -5, 0);
+        GetComponentInChildren<ObiSoftbody>().plasticCreep = 0.1f;
+        GetComponentInChildren<ObiSoftbody>().plasticRecovery = 0.1f;
+        GetComponentInChildren<ObiSoftbody>().plasticYield = 0.1f;
+        yield return new WaitForSeconds(0.5f);
+        //GetComponent<ObiSolver>().gravity = new Vector3(0,0, 0);
+        //GetComponent<ObiSolver>().parameters.damping = 1f;
+        GetComponentInChildren<ObiSoftbody>().plasticCreep = 0;
+        GetComponentInChildren<ObiSoftbody>().plasticRecovery = 0;
+        GetComponentInChildren<ObiSoftbody>().plasticYield = 0f;
+        //yield return new WaitForSeconds(0.1f);
+        //GetComponent<ObiSolver>().parameters.damping = 0.01f;
+        yield break;
     }
 }

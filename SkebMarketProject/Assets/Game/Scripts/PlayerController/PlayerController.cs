@@ -28,13 +28,13 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         ProductColliderControl();
-        Debug.DrawRay(new Vector3(transform.position.x + 0.25f, transform.position.y, transform.position.z), transform.TransformDirection(-Vector3.up) * 1000, Color.white);
+        Debug.DrawRay(new Vector3(transform.position.x + 0.4f, transform.position.y, transform.position.z), transform.TransformDirection(-Vector3.up) * 1000, Color.white);
     }
 
     private void ProductColliderControl()
     {
         RaycastHit hit;
-        if (Physics.Raycast(new Vector3(transform.position.x+0.25f, transform.position.y,transform.position.z), transform.TransformDirection(-Vector3.up), out hit, Mathf.Infinity))
+        if (Physics.Raycast(new Vector3(transform.position.x+0.4f, transform.position.y,transform.position.z), transform.TransformDirection(-Vector3.up), out hit, Mathf.Infinity))
         {
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) *1000, Color.white);
             if (hit.transform.GetComponent<Product>() != null&&hit.transform.GetComponent<Product>().Takeable)
