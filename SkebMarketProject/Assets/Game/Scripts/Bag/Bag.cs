@@ -66,16 +66,16 @@ public class Bag : MonoBehaviour
     }
     private IEnumerator ShakeTimer()
     {
-        //GetComponent<ObiSolver>().gravity = new Vector3(0, -5, 0);
-        GetComponentInChildren<ObiSoftbody>().plasticCreep = 0.1f;
-        GetComponentInChildren<ObiSoftbody>().plasticRecovery = 0.1f;
-        GetComponentInChildren<ObiSoftbody>().plasticYield = 0.1f;
+        GetComponent<ObiSolver>().gravity = new Vector3(0, -10, 0);
+        GetComponentInChildren<ObiSoftbody>().plasticCreep = 1f;
+        GetComponentInChildren<ObiSoftbody>().plasticRecovery = 1f;
+        GetComponentInChildren<ObiSoftbody>().plasticYield = 1f;
         yield return new WaitForSeconds(0.5f);
-        //GetComponent<ObiSolver>().gravity = new Vector3(0,0, 0);
+        GetComponent<ObiSolver>().gravity = new Vector3(0,0, 0);
         //GetComponent<ObiSolver>().parameters.damping = 1f;
-        GetComponentInChildren<ObiSoftbody>().plasticCreep = 0;
-        GetComponentInChildren<ObiSoftbody>().plasticRecovery = 0;
-        GetComponentInChildren<ObiSoftbody>().plasticYield = 0f;
+        //GetComponentInChildren<ObiSoftbody>().plasticCreep = 0;
+        //GetComponentInChildren<ObiSoftbody>().plasticRecovery = 0;
+        //GetComponentInChildren<ObiSoftbody>().plasticYield = 0f;
         //yield return new WaitForSeconds(0.1f);
         //GetComponent<ObiSolver>().parameters.damping = 0.01f;
         yield break;
