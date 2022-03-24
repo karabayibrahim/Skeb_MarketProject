@@ -57,7 +57,9 @@ public class PlayerController : MonoBehaviour
     {
         if (_myProduct==null)
         {
+            Hand.transform.DOLocalRotate(new Vector3(45, 90, 0f), 0.5f);
             _myProduct = product;
+            _myProduct.GetComponent<Rigidbody>().isKinematic = true;
             _myProduct.InTake = true;
             _myProduct.transform.SetParent(Hand.transform);
             _myProduct.GetComponent<Collider>().enabled = false;
@@ -83,7 +85,7 @@ public class PlayerController : MonoBehaviour
                 Vector2 touchPos = _theTouch.deltaPosition;
                 if (touchPos != Vector2.zero)
                 {
-                    transform.Translate(0, 0, touchPos.x * (HorizontalSpeed / 100) * Time.deltaTime);
+                    transform.position += new Vector3(0, 0, touchPos.x * (HorizontalSpeed / 100) * Time.deltaTime);
                     transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Clamp(transform.position.z, _movementClampNegative, _movementClampPositive));
                 }
             }
@@ -101,7 +103,7 @@ public class PlayerController : MonoBehaviour
                 Vector2 touchPos = _theTouch.deltaPosition;
                 if (touchPos != Vector2.zero)
                 {
-                    transform.Translate(touchPos.y * (VerticalSpeed / 100) * Time.deltaTime, 0, 0);
+                    transform.position += new Vector3(touchPos.y * (VerticalSpeed / 100) * Time.deltaTime, 0, 0);
                     transform.position = new Vector3(Mathf.Clamp(transform.position.x, _movementClampNegativeVer, _movementClampPositiveVer), transform.position.y, transform.position.z);
                 }
             }
@@ -111,10 +113,12 @@ public class PlayerController : MonoBehaviour
     {
         if (_myProduct!=null)
         {
+            Hand.transform.DOLocalRotate(new Vector3(90, 90, 0f), 0.1f);
             _anim.SetBool("Take", false);
             _myProduct.Takeable = false;
             _myProduct.Fall = true;
             _myProduct.GetComponent<Rigidbody>().isKinematic = false;
+            _myProduct.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
             _myProduct.GetComponent<Collider>().enabled = true;
             _myProduct.GetComponent<Product>().enabled = false;
             _myProduct.transform.SetParent(null);
