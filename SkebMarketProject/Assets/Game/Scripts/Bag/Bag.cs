@@ -7,6 +7,9 @@ public class Bag : MonoBehaviour
     public List<Product> MyProducts = new List<Product>();
     [SerializeField] private Material myMaterial;
     [SerializeField] private int _productCount;
+    [SerializeField] private GameObject objMain;
+    [SerializeField] private GameObject objLeft;
+    [SerializeField] private GameObject objRight;
 
     public int ProductCount
     {
@@ -24,6 +27,13 @@ public class Bag : MonoBehaviour
             myMaterial.color = new Color(myMaterial.color.r, myMaterial.color.g - 0.5f, myMaterial.color.b-0.5f,myMaterial.color.a);
             if (ProductCount > 3f)
             {
+                objMain.GetComponent<SkinnedMeshRenderer>().enabled = false;
+                objLeft.SetActive(true);
+                objRight.SetActive(true);
+                foreach (var item in MyProducts)
+                {
+                    item.GetComponent<ObiRigidbody>().kinematicForParticles = true;
+                }
                 //foreach (var item in MyProducts)
                 //{
                 //    item.GetComponent<Rigidbody>().mass = 10f;
@@ -34,7 +44,8 @@ public class Bag : MonoBehaviour
 
     void Start()
     {
-        transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        //transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        GameManager.Instance.Bag = GetComponent<Bag>();
         myMaterial = GetComponentInChildren<SkinnedMeshRenderer>().material;
     }
 
@@ -66,10 +77,11 @@ public class Bag : MonoBehaviour
     }
     private IEnumerator ShakeTimer()
     {
+        Debug.Log("Shake");
         GetComponent<ObiSolver>().gravity = new Vector3(0, -10, 0);
-        GetComponentInChildren<ObiSoftbody>().plasticCreep = 1f;
-        GetComponentInChildren<ObiSoftbody>().plasticRecovery = 1f;
-        GetComponentInChildren<ObiSoftbody>().plasticYield = 1f;
+        //GetComponentInChildren<ObiSoftbody>().plasticCreep = 1f;
+        //GetComponentInChildren<ObiSoftbody>().plasticRecovery = 1f;
+        //GetComponentInChildren<ObiSoftbody>().plasticYield = 1f;
         yield return new WaitForSeconds(0.5f);
         GetComponent<ObiSolver>().gravity = new Vector3(0,0, 0);
         //GetComponent<ObiSolver>().parameters.damping = 1f;

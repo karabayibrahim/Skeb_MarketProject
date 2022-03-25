@@ -1,0 +1,1303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4117152659607012079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 775ad4994fda946d1a5936c7e2dfc785, type: 3}
+  m_Name: tut
+  m_EditorClassIdentifier: 
+  particleIndices: 1100000015000000160000001d0000001f00000023000000
+  m_Blueprint: {fileID: 11400000}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccc267b58171450ea23d051b1b2d2c6, type: 3}
+  m_Name: Naylon2
+  m_EditorClassIdentifier: 
+  m_Empty: 0
+  m_ActiveParticleCount: 43
+  m_InitialActiveParticleCount: 43
+  _bounds:
+    m_Center: {x: -0.065389395, y: 0.22777206, z: 0.21638858}
+    m_Extent: {x: 0.85693944, y: 1.095608, z: 1.2207962}
+  positions:
+  - {x: -0.6358229, y: -0.7010037, z: 0.2966996}
+  - {x: -0.6495289, y: -0.28657487, z: -0.7605616}
+  - {x: -0.76899844, y: -0.24327254, z: -0.34027395}
+  - {x: -0.77017367, y: -0.3533596, z: 0.34871435}
+  - {x: -0.63823223, y: 0.37364912, z: -0.6988794}
+  - {x: -0.7943295, y: 0.3476326, z: -0.33453864}
+  - {x: -0.9223289, y: 0.3630094, z: 0.3351156}
+  - {x: -0.6971196, y: 0.294396, z: 0.65102816}
+  - {x: -0.76048315, y: 0.6996117, z: -0.6165888}
+  - {x: -0.8908698, y: 0.7171827, z: -0.38603845}
+  - {x: -0.26937726, y: -0.86783594, z: -0.8939358}
+  - {x: -0.31870607, y: -0.8463499, z: -0.3491543}
+  - {x: -0.3291191, y: -0.85829, z: 0.3396839}
+  - {x: -0.24861588, y: -0.86594844, z: 0.92823124}
+  - {x: -0.3349734, y: -0.33655703, z: -0.94530344}
+  - {x: -0.28971812, y: -0.3505651, z: 0.9171628}
+  - {x: -0.3415254, y: 0.33610773, z: -1.0044076}
+  - {x: -0.69280887, y: 0.14981596, z: 0.50241005}
+  - {x: -0.3202032, y: 0.32516074, z: 0.99497044}
+  - {x: -0.1483247, y: 0.553883, z: 1.4209222}
+  - {x: -0.2753391, y: 0.98178124, z: -0.88236034}
+  - {x: -0.6727565, y: 0.670396, z: -0.67148095}
+  - {x: -0.09793806, y: 1.3156302, z: -0.9116793}
+  - {x: 0.28072217, y: -0.8667858, z: -0.91656774}
+  - {x: 0.33294204, y: -0.8588354, z: -0.33735445}
+  - {x: 0.33503777, y: -0.86355, z: 0.3346788}
+  - {x: 0.19602552, y: -0.8675873, z: 0.8629831}
+  - {x: 0.34014663, y: -0.3351402, z: -0.9877452}
+  - {x: 0.28918082, y: -0.31733778, z: 0.90135205}
+  - {x: 0.33079365, y: 0.33367002, z: -0.99052215}
+  - {x: 0.63318086, y: 0.37920153, z: 0.33140567}
+  - {x: 0.3293171, y: 0.33142412, z: 0.9965106}
+  - {x: 0.16630211, y: 0.55666, z: 1.4371848}
+  - {x: 0.28182805, y: 0.9923175, z: -0.8819078}
+  - {x: 0.5909652, y: 0.6888781, z: -0.24463485}
+  - {x: 0.12114903, y: 1.32338, z: -0.9146974}
+  - {x: 0.64225525, y: -0.7351798, z: 0.28165105}
+  - {x: 0.6357621, y: -0.22117364, z: -0.33587766}
+  - {x: 0.79155004, y: -0.33091605, z: 0.40068778}
+  - {x: 0.7602964, y: -0.32182238, z: 0.6689318}
+  - {x: 0.68984854, y: 0.3178344, z: -0.3447317}
+  - {x: 0.67078036, y: 0.3213951, z: 0.3432455}
+  - {x: 0.68247795, y: 0.7064301, z: -0.43985105}
+  restPositions:
+  - {x: -0.6358229, y: -0.7010037, z: 0.2966996, w: 1}
+  - {x: -0.6495289, y: -0.28657487, z: -0.7605616, w: 1}
+  - {x: -0.76899844, y: -0.24327254, z: -0.34027395, w: 1}
+  - {x: -0.77017367, y: -0.3533596, z: 0.34871435, w: 1}
+  - {x: -0.63823223, y: 0.37364912, z: -0.6988794, w: 1}
+  - {x: -0.7943295, y: 0.3476326, z: -0.33453864, w: 1}
+  - {x: -0.9223289, y: 0.3630094, z: 0.3351156, w: 1}
+  - {x: -0.6971196, y: 0.294396, z: 0.65102816, w: 1}
+  - {x: -0.76048315, y: 0.6996117, z: -0.6165888, w: 1}
+  - {x: -0.8908698, y: 0.7171827, z: -0.38603845, w: 1}
+  - {x: -0.26937726, y: -0.86783594, z: -0.8939358, w: 1}
+  - {x: -0.31870607, y: -0.8463499, z: -0.3491543, w: 1}
+  - {x: -0.3291191, y: -0.85829, z: 0.3396839, w: 1}
+  - {x: -0.24861588, y: -0.86594844, z: 0.92823124, w: 1}
+  - {x: -0.3349734, y: -0.33655703, z: -0.94530344, w: 1}
+  - {x: -0.28971812, y: -0.3505651, z: 0.9171628, w: 1}
+  - {x: -0.3415254, y: 0.33610773, z: -1.0044076, w: 1}
+  - {x: -0.69280887, y: 0.14981596, z: 0.50241005, w: 1}
+  - {x: -0.3202032, y: 0.32516074, z: 0.99497044, w: 1}
+  - {x: -0.1483247, y: 0.553883, z: 1.4209222, w: 1}
+  - {x: -0.2753391, y: 0.98178124, z: -0.88236034, w: 1}
+  - {x: -0.6727565, y: 0.670396, z: -0.67148095, w: 1}
+  - {x: -0.09793806, y: 1.3156302, z: -0.9116793, w: 1}
+  - {x: 0.28072217, y: -0.8667858, z: -0.91656774, w: 1}
+  - {x: 0.33294204, y: -0.8588354, z: -0.33735445, w: 1}
+  - {x: 0.33503777, y: -0.86355, z: 0.3346788, w: 1}
+  - {x: 0.19602552, y: -0.8675873, z: 0.8629831, w: 1}
+  - {x: 0.34014663, y: -0.3351402, z: -0.9877452, w: 1}
+  - {x: 0.28918082, y: -0.31733778, z: 0.90135205, w: 1}
+  - {x: 0.33079365, y: 0.33367002, z: -0.99052215, w: 1}
+  - {x: 0.63318086, y: 0.37920153, z: 0.33140567, w: 1}
+  - {x: 0.3293171, y: 0.33142412, z: 0.9965106, w: 1}
+  - {x: 0.16630211, y: 0.55666, z: 1.4371848, w: 1}
+  - {x: 0.28182805, y: 0.9923175, z: -0.8819078, w: 1}
+  - {x: 0.5909652, y: 0.6888781, z: -0.24463485, w: 1}
+  - {x: 0.12114903, y: 1.32338, z: -0.9146974, w: 1}
+  - {x: 0.64225525, y: -0.7351798, z: 0.28165105, w: 1}
+  - {x: 0.6357621, y: -0.22117364, z: -0.33587766, w: 1}
+  - {x: 0.79155004, y: -0.33091605, z: 0.40068778, w: 1}
+  - {x: 0.7602964, y: -0.32182238, z: 0.6689318, w: 1}
+  - {x: 0.68984854, y: 0.3178344, z: -0.3447317, w: 1}
+  - {x: 0.67078036, y: 0.3213951, z: 0.3432455, w: 1}
+  - {x: 0.68247795, y: 0.7064301, z: -0.43985105, w: 1}
+  orientations:
+  - {x: 0.7107495, y: 0.004713781, z: -0.5462201, w: 0.44323412}
+  - {x: 0.24158455, y: 0.8626145, z: -0.16503543, w: -0.41266987}
+  - {x: 0.6614017, y: -0.28070685, z: -0.5551176, w: 0.4190418}
+  - {x: 0.26480293, y: -0.63709915, z: -0.30852503, w: 0.6548255}
+  - {x: 0.09355325, y: 0.90367365, z: -0.068534866, w: -0.4122192}
+  - {x: 0.6767646, y: 0.09582268, z: 0.7266879, w: 0.06879319}
+  - {x: 0.310086, y: -0.6235076, z: 0.0639426, w: 0.71484005}
+  - {x: 0.21723409, y: -0.3761558, z: -0.0664073, w: 0.89827967}
+  - {x: 0.41396493, y: 0.14855292, z: 0.89808965, w: -0.00034636352}
+  - {x: 0.64054805, y: 0.16114488, z: 0.7292425, w: -0.17870623}
+  - {x: 0.7824017, y: 0.13132647, z: -0.18181494, w: 0.5809856}
+  - {x: -0.30293065, y: -0.62637335, z: 0.65811974, w: -0.28769413}
+  - {x: 0.71931124, y: 0.023408048, z: -0.023197114, w: 0.69390583}
+  - {x: 0.5086739, y: -0.33027768, z: 0.2163718, w: 0.7650823}
+  - {x: 0.1300364, y: -0.011392791, z: 0.9801772, w: -0.14904167}
+  - {x: -0.27795982, y: 0.061719406, z: 0.9546077, w: -0.087482326}
+  - {x: 0.042567853, y: 0.94764507, z: 0.015400286, w: -0.3161007}
+  - {x: 0.85010946, y: -0.10295556, z: 0.4364127, w: -0.27614856}
+  - {x: 0.1280797, y: -0.36167726, z: 0.35579494, w: 0.8521709}
+  - {x: 0.40513527, y: -0.25709152, z: 0.27252313, w: 0.83396673}
+  - {x: 0.74603456, y: 0.6190286, z: -0.107615285, w: -0.22057875}
+  - {x: -0.076863274, y: 0.38141203, z: -0.0151321795, w: 0.92107975}
+  - {x: -0.01386956, y: 0.10744282, z: 0.24333684, w: 0.96387285}
+  - {x: 0.80977005, y: -0.087852016, z: 0.16480808, w: 0.5562309}
+  - {x: -0.28033492, y: -0.6475059, z: 0.65191287, w: -0.2777735}
+  - {x: 0.71592146, y: 0.13332236, z: -0.14247626, w: 0.6703597}
+  - {x: 0.5361154, y: 0.2725097, z: -0.1535157, w: 0.7840611}
+  - {x: -0.20779297, y: 0.021483187, z: 0.9777241, w: 0.020402448}
+  - {x: 0.255008, y: -0.016303092, z: 0.9442752, w: 0.20748375}
+  - {x: -0.3184119, y: -0.06505939, z: 0.9444426, w: -0.04908542}
+  - {x: 0.23491277, y: -0.6260622, z: -0.17207646, w: 0.72336155}
+  - {x: 0.36653993, y: 0.8474147, z: 0.130739, w: -0.36117056}
+  - {x: 0.46972263, y: 0.20306902, z: -0.25053886, w: 0.82179916}
+  - {x: 0.65656346, y: 0.7117281, z: 0.20864567, w: 0.13723892}
+  - {x: 0.08271975, y: -0.8190887, z: 0.019507615, w: 0.5673364}
+  - {x: -0.056559153, y: -0.05779042, z: -0.15143451, w: 0.9851543}
+  - {x: -0.03049117, y: 0.71140033, z: -0.44561428, w: 0.54259366}
+  - {x: -0.31408817, y: 0.66841966, z: -0.46805525, w: 0.48527116}
+  - {x: -0.44139573, y: 0.6161392, z: -0.3848366, w: 0.52672863}
+  - {x: -0.31012362, y: 0.30098286, z: -0.64661396, w: 0.6285882}
+  - {x: -0.2974192, y: 0.6091622, z: -0.26888973, w: 0.68422335}
+  - {x: 0.7032355, y: -0.19889343, z: 0.63926834, w: -0.23924303}
+  - {x: -0.018554956, y: -0.75633746, z: 0.0015680743, w: 0.65391666}
+  restOrientations:
+  - {x: 0.7107495, y: 0.004713781, z: -0.5462201, w: 0.44323412}
+  - {x: 0.24158455, y: 0.8626145, z: -0.16503543, w: -0.41266987}
+  - {x: 0.6614017, y: -0.28070685, z: -0.5551176, w: 0.4190418}
+  - {x: 0.26480293, y: -0.63709915, z: -0.30852503, w: 0.6548255}
+  - {x: 0.09355325, y: 0.90367365, z: -0.068534866, w: -0.4122192}
+  - {x: 0.6767646, y: 0.09582268, z: 0.7266879, w: 0.06879319}
+  - {x: 0.310086, y: -0.6235076, z: 0.0639426, w: 0.71484005}
+  - {x: 0.21723409, y: -0.3761558, z: -0.0664073, w: 0.89827967}
+  - {x: 0.41396493, y: 0.14855292, z: 0.89808965, w: -0.00034636352}
+  - {x: 0.64054805, y: 0.16114488, z: 0.7292425, w: -0.17870623}
+  - {x: 0.7824017, y: 0.13132647, z: -0.18181494, w: 0.5809856}
+  - {x: -0.30293065, y: -0.62637335, z: 0.65811974, w: -0.28769413}
+  - {x: 0.71931124, y: 0.023408048, z: -0.023197114, w: 0.69390583}
+  - {x: 0.5086739, y: -0.33027768, z: 0.2163718, w: 0.7650823}
+  - {x: 0.1300364, y: -0.011392791, z: 0.9801772, w: -0.14904167}
+  - {x: -0.27795982, y: 0.061719406, z: 0.9546077, w: -0.087482326}
+  - {x: 0.042567853, y: 0.94764507, z: 0.015400286, w: -0.3161007}
+  - {x: 0.85010946, y: -0.10295556, z: 0.4364127, w: -0.27614856}
+  - {x: 0.1280797, y: -0.36167726, z: 0.35579494, w: 0.8521709}
+  - {x: 0.40513527, y: -0.25709152, z: 0.27252313, w: 0.83396673}
+  - {x: 0.74603456, y: 0.6190286, z: -0.107615285, w: -0.22057875}
+  - {x: -0.076863274, y: 0.38141203, z: -0.0151321795, w: 0.92107975}
+  - {x: -0.01386956, y: 0.10744282, z: 0.24333684, w: 0.96387285}
+  - {x: 0.80977005, y: -0.087852016, z: 0.16480808, w: 0.5562309}
+  - {x: -0.28033492, y: -0.6475059, z: 0.65191287, w: -0.2777735}
+  - {x: 0.71592146, y: 0.13332236, z: -0.14247626, w: 0.6703597}
+  - {x: 0.5361154, y: 0.2725097, z: -0.1535157, w: 0.7840611}
+  - {x: -0.20779297, y: 0.021483187, z: 0.9777241, w: 0.020402448}
+  - {x: 0.255008, y: -0.016303092, z: 0.9442752, w: 0.20748375}
+  - {x: -0.3184119, y: -0.06505939, z: 0.9444426, w: -0.04908542}
+  - {x: 0.23491277, y: -0.6260622, z: -0.17207646, w: 0.72336155}
+  - {x: 0.36653993, y: 0.8474147, z: 0.130739, w: -0.36117056}
+  - {x: 0.46972263, y: 0.20306902, z: -0.25053886, w: 0.82179916}
+  - {x: 0.65656346, y: 0.7117281, z: 0.20864567, w: 0.13723892}
+  - {x: 0.08271975, y: -0.8190887, z: 0.019507615, w: 0.5673364}
+  - {x: -0.056559153, y: -0.05779042, z: -0.15143451, w: 0.9851543}
+  - {x: -0.03049117, y: 0.71140033, z: -0.44561428, w: 0.54259366}
+  - {x: -0.31408817, y: 0.66841966, z: -0.46805525, w: 0.48527116}
+  - {x: -0.44139573, y: 0.6161392, z: -0.3848366, w: 0.52672863}
+  - {x: -0.31012362, y: 0.30098286, z: -0.64661396, w: 0.6285882}
+  - {x: -0.2974192, y: 0.6091622, z: -0.26888973, w: 0.68422335}
+  - {x: 0.7032355, y: -0.19889343, z: 0.63926834, w: -0.23924303}
+  - {x: -0.018554956, y: -0.75633746, z: 0.0015680743, w: 0.65391666}
+  velocities:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  angularVelocities:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  invMasses:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  invRotationalMasses:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  filters: 0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff0200ffff
+  principalRadii:
+  - {x: 0.581025, y: 0.54284054, z: 0.19367501}
+  - {x: 0.581025, y: 0.49128005, z: 0.19367501}
+  - {x: 0.581025, y: 0.551089, z: 0.19367501}
+  - {x: 0.581025, y: 0.5270265, z: 0.19367501}
+  - {x: 0.581025, y: 0.49385843, z: 0.19367501}
+  - {x: 0.581025, y: 0.574632, z: 0.193675}
+  - {x: 0.581025, y: 0.32069802, z: 0.19367501}
+  - {x: 0.581025, y: 0.19367501, z: 0.19367501}
+  - {x: 0.581025, y: 0.19367501, z: 0.19367501}
+  - {x: 0.581025, y: 0.24266635, z: 0.19367501}
+  - {x: 0.581025, y: 0.28639406, z: 0.19367501}
+  - {x: 0.581025, y: 0.53465635, z: 0.193675}
+  - {x: 0.581025, y: 0.55593383, z: 0.193675}
+  - {x: 0.581025, y: 0.29108474, z: 0.19367501}
+  - {x: 0.581025, y: 0.52618384, z: 0.19367501}
+  - {x: 0.581025, y: 0.46378195, z: 0.193675}
+  - {x: 0.581025, y: 0.4120738, z: 0.19367501}
+  - {x: 0.581025, y: 0.381068, z: 0.19367501}
+  - {x: 0.581025, y: 0.22561677, z: 0.193675}
+  - {x: 0.581025, y: 0.193675, z: 0.193675}
+  - {x: 0.581025, y: 0.2562096, z: 0.193675}
+  - {x: 0.581025, y: 0.19367501, z: 0.19367501}
+  - {x: 0.581025, y: 0.193675, z: 0.193675}
+  - {x: 0.581025, y: 0.35345125, z: 0.19367501}
+  - {x: 0.581025, y: 0.5300332, z: 0.19367501}
+  - {x: 0.581025, y: 0.55082226, z: 0.193675}
+  - {x: 0.581025, y: 0.23558676, z: 0.19367501}
+  - {x: 0.581025, y: 0.5017005, z: 0.19367501}
+  - {x: 0.581025, y: 0.43550286, z: 0.19367501}
+  - {x: 0.581025, y: 0.4142316, z: 0.19367501}
+  - {x: 0.581025, y: 0.45585278, z: 0.19367501}
+  - {x: 0.581025, y: 0.28279215, z: 0.19367501}
+  - {x: 0.581025, y: 0.19367501, z: 0.19367501}
+  - {x: 0.581025, y: 0.21604891, z: 0.19367501}
+  - {x: 0.581025, y: 0.19367501, z: 0.19367501}
+  - {x: 0.581025, y: 0.19367501, z: 0.19367501}
+  - {x: 0.581025, y: 0.4815129, z: 0.193675}
+  - {x: 0.581025, y: 0.5152955, z: 0.19367501}
+  - {x: 0.581025, y: 0.5398472, z: 0.19367501}
+  - {x: 0.581025, y: 0.4128507, z: 0.193675}
+  - {x: 0.581025, y: 0.54388064, z: 0.19367501}
+  - {x: 0.581025, y: 0.5366034, z: 0.19367501}
+  - {x: 0.581025, y: 0.19367501, z: 0.19367501}
+  colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  points: 
+  edges: 
+  triangles: 
+  distanceConstraintsData:
+    batches: []
+  bendConstraintsData:
+    batches: []
+  skinConstraintsData:
+    batches: []
+  tetherConstraintsData:
+    batches: []
+  stretchShearConstraintsData:
+    batches: []
+  bendTwistConstraintsData:
+    batches: []
+  shapeMatchingConstraintsData:
+    batches:
+    - m_IDs: 0000000001000000020000000300000004000000
+      m_IDToIndex: 0000000001000000020000000300000004000000
+      m_ConstraintCount: 5
+      m_ActiveConstraintCount: 5
+      m_InitialActiveConstraintCount: 5
+      particleIndices:
+        serializedContents: 000000000c00000003000000020000000b0000000d000000080000001400000004000000090000000500000010000000150000001600000012000000070000001f0000000f0000001100000013000000060000001c0000001e00000020000000240000001900000026000000180000001a00000025000000270000002a00000022000000280000002100000029000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 00000000060000000e000000180000001f000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 06000000080000000a0000000700000005000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 0000000000000000000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 00000000010000000200000003000000
+      m_IDToIndex: 00000000010000000200000003000000
+      m_ConstraintCount: 4
+      m_ActiveConstraintCount: 4
+      m_InitialActiveConstraintCount: 4
+      particleIndices:
+        serializedContents: 010000000e0000000400000002000000050000000a00000010000000070000001200000006000000030000000f0000001100000013000000160000002300000014000000080000001500000021000000190000000c00000024000000180000001a0000000b0000000d0000001c00000026000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 00000000070000000e00000014000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 07000000070000000600000009000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 00000000000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 00000000010000000200000003000000
+      m_IDToIndex: 00000000010000000200000003000000
+      m_ConstraintCount: 4
+      m_ActiveConstraintCount: 4
+      m_InitialActiveConstraintCount: 4
+      particleIndices:
+        serializedContents: 020000000500000001000000030000000000000004000000060000000b0000000e000000130000002000000012000000070000000f0000001f00000021000000140000001d00000023000000220000001000000015000000160000002a000000250000002800000026000000180000001b0000002400000029000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 00000000090000000f00000018000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 09000000060000000900000007000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 00000000000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 00000000010000000200000003000000
+      m_IDToIndex: 00000000010000000200000003000000
+      m_ConstraintCount: 4
+      m_ActiveConstraintCount: 4
+      m_InitialActiveConstraintCount: 4
+      particleIndices:
+        serializedContents: 0300000000000000060000000200000005000000070000000c0000000f000000110000000a000000170000000e0000000b00000001000000180000001b00000014000000080000002100000010000000160000001500000004000000090000001d000000220000002300000020000000130000001f000000120000001c000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 0000000009000000100000001b000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 09000000070000000b00000005000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 00000000000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 000000000100000002000000
+      m_IDToIndex: 000000000100000002000000
+      m_ConstraintCount: 3
+      m_ActiveConstraintCount: 3
+      m_InitialActiveConstraintCount: 3
+      particleIndices:
+        serializedContents: 040000001000000001000000080000000500000002000000090000000e000000140000000c00000000000000190000000b0000000d000000030000000f000000180000001a0000001e00000011000000290000001f000000120000001c000000220000002600000028000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000900000012000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 090000000900000009000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 0000000001000000020000000300000004000000
+      m_IDToIndex: 0000000001000000020000000300000004000000
+      m_ConstraintCount: 5
+      m_ActiveConstraintCount: 5
+      m_InitialActiveConstraintCount: 5
+      particleIndices:
+        serializedContents: 05000000020000000900000004000000060000000100000003000000080000001000000011000000150000000d0000001a0000000f0000000c00000000000000190000001c000000170000000a0000001b000000180000000b0000000e0000002300000016000000210000001400000022000000290000001e00000026000000280000001f00000025000000270000002a000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000b00000012000000180000001d000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 0b00000007000000060000000500000008000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 0000000000000000000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 000000000100000002000000
+      m_IDToIndex: 000000000100000002000000
+      m_ConstraintCount: 3
+      m_ActiveConstraintCount: 3
+      m_InitialActiveConstraintCount: 3
+      particleIndices:
+        serializedContents: 0600000011000000030000000500000007000000020000000900000012000000180000000b00000017000000190000000a0000000c0000001b000000240000002500000022000000150000002a00000021000000140000001d0000001e0000002300000028000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000800000011000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 080000000900000009000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 000000000100000002000000
+      m_IDToIndex: 000000000100000002000000
+      m_ConstraintCount: 3
+      m_ActiveConstraintCount: 3
+      m_InitialActiveConstraintCount: 3
+      particleIndices:
+        serializedContents: 090000001500000005000000080000000400000006000000140000000b000000180000000a0000000c00000000000000020000000e00000017000000190000001f000000120000001c0000001e000000200000000f00000011000000130000002700000029000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000700000010000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 07000000090000000a000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 000000000000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 0000000001000000
+      m_IDToIndex: 0000000001000000
+      m_ConstraintCount: 2
+      m_ActiveConstraintCount: 2
+      m_InitialActiveConstraintCount: 2
+      particleIndices:
+        serializedContents: 0e000000010000001b0000000a0000001000000002000000040000000b000000170000001d0000000f0000001c0000000d0000001200000003000000070000000c00000011000000130000001a0000001f000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000a000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 0a0000000b000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 0000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 0000000001000000
+      m_IDToIndex: 0000000001000000
+      m_ConstraintCount: 2
+      m_ActiveConstraintCount: 2
+      m_InitialActiveConstraintCount: 2
+      particleIndices:
+        serializedContents: 10000000040000001d0000000e00000014000000010000000500000008000000150000001b000000210000001a0000000d0000001c000000190000000c0000000f0000002400000027000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000b000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 0b00000008000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 0000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 0000000001000000
+      m_IDToIndex: 0000000001000000
+      m_ConstraintCount: 2
+      m_ActiveConstraintCount: 2
+      m_InitialActiveConstraintCount: 2
+      particleIndices:
+        serializedContents: 11000000060000001e000000120000000300000005000000070000000f000000150000001f0000001b0000000e000000170000001d0000000a000000100000001800000025000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000a000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 0a00000008000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 0000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 0000000001000000
+      m_IDToIndex: 0000000001000000
+      m_ConstraintCount: 2
+      m_ActiveConstraintCount: 2
+      m_InitialActiveConstraintCount: 2
+      particleIndices:
+        serializedContents: 150000000900000022000000140000000500000008000000100000001100000016000000210000001c0000000f000000270000001a0000001f0000000d00000012000000190000001e0000002000000026000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 000000000a000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 0a0000000b000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 0000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 0000000001000000
+      m_IDToIndex: 0000000001000000
+      m_ConstraintCount: 2
+      m_ActiveConstraintCount: 2
+      m_InitialActiveConstraintCount: 2
+      particleIndices:
+        serializedContents: 1d000000100000001b000000210000000e000000140000002200000028000000270000001c000000260000001a0000001f0000002400000029000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 0000000008000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 0800000007000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 0000000000000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 00000000
+      m_IDToIndex: 00000000
+      m_ConstraintCount: 1
+      m_ActiveConstraintCount: 1
+      m_InitialActiveConstraintCount: 1
+      particleIndices:
+        serializedContents: 2600000024000000290000002500000027000000190000001c0000001e00000028000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 00000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 09000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 00000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+    - m_IDs: 00000000
+      m_IDToIndex: 00000000
+      m_ConstraintCount: 1
+      m_ActiveConstraintCount: 1
+      m_InitialActiveConstraintCount: 1
+      particleIndices:
+        serializedContents: 28000000250000002a000000290000001d0000001e0000002200000026000000
+        m_AlignBytes: 16
+      lambdas:
+        serializedContents: []
+        m_AlignBytes: 16
+      firstIndex:
+        serializedContents: 00000000
+        m_AlignBytes: 16
+      numIndices:
+        serializedContents: 08000000
+        m_AlignBytes: 16
+      explicitGroup:
+        serializedContents: 00000000
+        m_AlignBytes: 16
+      materialParameters:
+        serializedContents:
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        m_AlignBytes: 16
+      restComs:
+        serializedContents: []
+        m_AlignBytes: 16
+      coms:
+        serializedContents: []
+        m_AlignBytes: 16
+      orientations:
+        serializedContents: []
+        m_AlignBytes: 16
+      linearTransforms:
+        serializedContents: []
+        m_AlignBytes: 16
+      plasticDeformations:
+        serializedContents: []
+        m_AlignBytes: 16
+  aerodynamicConstraintsData:
+    batches: []
+  chainConstraintsData:
+    batches: []
+  volumeConstraintsData:
+    batches: []
+  groups:
+  - {fileID: -4117152659607012079}
+  inputMesh: {fileID: 4711208715938537054, guid: ea28b0beab0ca1a4cb198012c5dc25d6,
+    type: 3}
+  scale: {x: 1, y: 1, z: 1}
+  rotation: {x: 0, y: 0, z: 0, w: 1}
+  surfaceSamplingMode: 2
+  surfaceResolution: 4
+  volumeSamplingMode: 0
+  volumeResolution: 8
+  skeleton: {fileID: 0}
+  rootBone: {fileID: 0}
+  boneRotation: {x: 0, y: 0, z: 0, w: 0}
+  maxAnisotropy: 3
+  smoothing: 0.25
+  shapeResolution: 48
+  generatedMesh: {fileID: 4711208715938537054, guid: ea28b0beab0ca1a4cb198012c5dc25d6,
+    type: 3}
+  vertexToParticle: 150000001500000015000000150000001500000008000000150000001500000015000000080000001500000008000000090000000900000009000000150000001400000014000000140000000800000008000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000008000000090000000900000009000000150000000800000015000000040000000400000004000000090000000900000004000000040000000400000004000000100000001000000010000000150000001500000015000000100000001400000010000000100000001000000014000000100000001000000010000000100000001000000010000000100000001000000014000000140000001400000010000000140000001000000010000000100000001400000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000040000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001d0000001d0000001d0000001d0000001d0000001d0000000e0000001b0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000001b0000000e0000000e0000001000000004000000040000000400000005000000050000000100000004000000040000000400000005000000050000000e0000000900000005000000090000000400000005000000050000000400000004000000010000000e0000000500000004000000040000000100000001000000050000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000001b0000000e0000000e0000000e0000000e0000000e0000000e0000001b0000000e0000000e0000000e0000000e0000000e0000000e0000001b0000000e0000000e0000000e0000000e0000000e0000001b0000000e0000000e0000000e0000000e0000000100000001000000010000000400000005000000050000000e0000000100000001000000010000000100000005000000050000000e0000000100000001000000010000000100000002000000050000000e0000000100000001000000010000000200000002000000010000000e0000000e0000000e0000000e0000000e0000000a0000000a0000000a000000170000000a0000000a0000000a0000000a0000000a0000000a000000170000000a0000000a0000000a0000000a0000000a0000000a000000170000000a0000000a0000000a0000000a0000000a000000170000000a0000000a000000170000000a0000000a0000000a000000170000000a00000017000000170000000a0000000a0000001700000017000000170000000a0000000a0000000a000000170000001700000017000000170000000a0000000a0000000a0000000a00000017000000170000000a0000000a0000000e0000000a0000000a0000001b0000000a0000000a000000010000000a000000010000000a0000000b0000000b000000010000000a0000000100000001000000010000000b0000000b000000010000000b000000010000000100000001000000010000000b0000000b0000000b000000010000000100000001000000010000000b0000000b0000000b0000000200000002000000020000000b0000000b0000000b0000000200000002000000000000000b0000000000000000000000000000000000000000000000000000000000000002000000020000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000c0000000c000000000000000000000000000000000000000d0000000c0000000000000000000000000000000d0000000d0000000d00000000000000000000000d0000000d0000000d0000000d000000000000000f0000000d0000000d0000000d0000000d0000000f0000000f0000000d0000000d0000000d0000000d0000000f0000000f0000000d0000000d0000000d0000000d0000000f0000000f0000000d0000000d0000000d0000000d0000000f0000000f0000000d0000000d0000000d0000000d0000000f0000000f0000000d0000000d0000001a0000001a0000000f0000000d0000000d0000001a0000001a0000001a0000000f0000000d0000001a0000001a0000001a0000001a0000000f0000001a0000001a0000001a0000001a0000001a0000001c0000001a0000001a0000001a0000001a0000001a0000001c0000001a0000001a0000001a0000001a0000001a0000001c0000001a0000001a0000001a0000001a0000001a0000001c0000001a0000001a0000001a0000001a000000190000001c0000001c0000001a0000001a00000019000000190000001c0000001c0000001a0000001900000019000000190000001c0000001c000000240000002400000024000000190000001c000000270000002400000024000000240000002400000027000000270000002400000024000000240000002400000024000000240000002400000024000000240000002700000024000000240000002400000024000000240000001800000018000000240000002400000024000000240000002400000024000000240000002500000024000000240000002400000025000000240000002400000024000000250000002400000024000000240000002600000025000000260000002600000024000000260000002500000026000000260000002600000027000000260000002500000026000000260000002600000027000000260000002500000027000000270000002600000026000000270000002500000028000000260000002600000027000000270000002900000028000000260000002700000029000000280000002700000027000000270000002700000027000000270000002600000027000000270000001c000000260000002700000027000000270000001c000000260000002600000027000000270000001c0000002700000027000000270000002600000027000000270000002600000027000000270000001c0000002700000027000000270000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000000f000000270000001c0000001c0000001c0000000f0000001c0000001c0000000f0000000f0000001c0000001c0000000f0000000f0000001c0000000f0000000f0000000f0000001c0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f000000030000000f0000000f0000000f000000000000000f0000000f00000003000000000000000f0000000f00000003000000000000000f0000000300000003000000000000000f00000003000000030000000300000003000000030000000300000003000000030000000300000003000000020000000300000003000000030000000200000003000000030000000200000002000000020000000300000003000000020000000200000003000000010000000200000003000000020000000200000002000000020000000200000002000000020000000200000002000000020000000500000003000000020000000500000005000000030000000300000005000000050000000500000003000000110000000500000005000000050000000300000011000000050000000500000005000000030000000600000006000000050000000900000003000000060000000600000005000000090000000900000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000700000006000000060000000600000006000000070000000700000006000000060000000600000007000000070000001100000006000000070000000600000007000000120000001100000011000000110000001100000007000000030000001100000003000000110000001100000007000000110000001100000011000000110000001100000011000000070000001100000011000000110000000700000012000000070000001100000011000000120000001200000012000000110000000700000011000000110000000f0000000f0000000f0000000f0000000f000000120000000f0000000f0000000f0000000f0000000f0000000f00000012000000120000000f0000000f0000000f00000012000000120000000f0000000f0000000f00000012000000120000000f0000000f0000001c00000012000000120000000f0000001c0000001c00000012000000120000001c0000001c0000001c0000001f0000001c0000001c0000001c0000001f0000001c0000001c0000001c0000001f0000001c0000001c0000001c0000001f0000001c0000001c0000001c0000001c0000001c0000001c0000001f0000001c0000001c000000270000001f0000001f0000001f000000270000002700000029000000290000002900000029000000290000002900000029000000290000002900000029000000290000002900000028000000290000001e00000022000000290000001e0000001e00000022000000290000002900000022000000220000001e00000029000000290000001e0000001e0000001e000000220000001e00000022000000220000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e000000290000001e000000290000001e000000290000002900000029000000290000002900000029000000290000001f0000001f0000002900000029000000290000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f000000120000001f0000001f000000120000001f0000001f000000120000001f0000001200000012000000120000001f0000001f0000001f00000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001f000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f00000024000000180000001800000024000000240000002400000024000000240000002400000024000000240000002400000019000000240000001900000019000000190000001900000019000000190000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000c0000000c0000000c0000000c0000000c0000000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a00000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000c0000000c0000000c0000000c0000000c0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a000000190000001900000019000000190000001900000019000000240000002400000024000000240000002400000024000000240000002400000024000000240000002400000024000000180000001800000022000000220000002200000022000000220000002a0000002a00000022000000280000002a00000028000000280000002800000028000000280000002800000028000000280000002800000028000000250000002800000025000000250000002500000025000000250000002500000025000000250000002500000025000000250000002500000025000000250000002500000025000000250000002500000024000000250000001800000024000000250000001800000024000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001700000017000000250000001800000017000000170000001700000017000000250000001700000017000000170000001700000017000000250000001700000017000000170000001700000017000000250000001700000017000000170000001700000017000000250000001b00000017000000170000001700000017000000250000001b0000001700000017000000170000001700000017000000170000001b00000017000000170000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001d0000001b0000001b0000001b0000001d0000001d0000001b0000001d0000001d0000001d0000001b0000001b0000001b0000001d0000001d0000001b0000001b0000001d0000001d0000001b0000001b0000001d0000001b0000001d0000001b0000001d0000001d0000001d0000001d0000001d0000001d00000014000000140000001400000014000000140000002100000021000000210000002100000021000000210000001d0000002100000021000000210000001d0000001d000000210000001d0000001d0000001d000000210000001d0000001d0000001d000000210000001d0000001d0000001d0000001d0000001d00000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000001d0000001d0000001d000000210000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001b0000001d0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b000000180000001b0000001b000000250000001b0000001b000000250000001b0000001b00000025000000250000001b0000001b0000002500000025000000250000001d0000002500000025000000250000001d0000002500000028000000250000001d000000280000002800000025000000250000001d00000028000000280000002800000028000000280000001d0000001d00000028000000280000002800000028000000280000002a0000001d0000002a000000280000002800000028000000280000002a0000002800000028000000280000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000001d0000002a0000002100000021000000210000002a0000002200000022000000220000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000120000001200000012000000120000001200000012000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f00000021000000210000002100000021000000210000001d0000002100000021000000210000001d000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000021000000210000002100000021000000210000002100000021000000210000002100000023000000230000002300000023000000230000002300000023000000230000002300000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000016000000230000001600000016000000160000002300000016000000230000001600000016000000160000001400000014000000140000001600000016000000160000001600000016000000160000001600000014000000140000001400000014000000140000001600000016000000160000001600000016000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000200000002000000020000000200000002000000020000000200000002000000013000000200000001300000013000000130000002000000020000000200000001300000020000000130000002000000013000000200000001300000020000000130000002000000013000000200000001300000020000000130000002000000013000000200000001300000020000000130000002000000013000000200000001300000020000000130000002000000013000000200000001300000020000000130000002000000013000000200000001300000020000000130000002000000020000000200000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000012000000120000001200000012000000200000002000000020000000200000001300000013000000130000001300000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000230000002300000023000000230000002100000023000000230000002100000021000000210000002300000023000000230000002100000021000000210000002100000021000000210000002100000021000000210000002100000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001300000013000000120000001300000013000000120000001300000013000000130000001300000013000000130000001300000013000000130000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f000000200000001f00000020000000200000002000000020000000200000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000180000000b000000180000000b0000000a0000000a00000017000000180000000b0000000a000000180000000b0000000b0000000b0000000a0000000b0000000a0000000a0000000b0000000a0000000a0000000a0000000a0000000a0000000a0000000a000000170000000a0000000a00000017000000170000000a0000000a00000017000000170000001700000017000000170000001700000017000000170000000a000000170000000a00000017000000170000000a000000170000000a0000000a0000000a0000000a000000170000000a00000017000000170000000a0000000a0000001700000017000000170000001800000018000000180000001800000017000000170000001700000018000000170000001700000017000000170000001800000018000000170000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000000a0000000b0000000a0000000b000000180000000b0000000a0000000a000000180000000b0000000b0000000b0000000b0000000a0000000b0000000b0000000a0000000a0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b000000180000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b000000180000000b0000000b0000000b000000000000000b0000000b0000000b000000180000000b0000000b0000000b0000000b00000000000000000000000000000000000000000000000c000000000000000000000000000000000000000c0000000c0000000c0000000c0000000c000000180000000c0000000c0000000c0000000c0000000c0000000c0000000c0000000c000000180000000c0000000c0000000c0000000c0000000c0000000c0000000c0000000d0000000c0000000c0000000c0000000c0000000d0000000d0000000c0000000d0000000d0000000c0000000d0000000d0000000d0000000d0000000d0000000d0000000c0000000d0000000d0000000c000000180000000c0000000c0000000d0000000d0000000d0000000d0000000d0000001a0000000d0000001a0000001a0000001a0000001a0000001a0000000c0000000c00000018000000190000001a0000001a0000001a0000001a000000190000001900000018000000190000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a000000190000001a0000001a00000019000000190000001900000019000000190000001900000019000000190000001900000019000000190000001900000019000000190000002400000019000000190000002400000024000000240000001900000019000000240000002400000019000000240000002400000024000000240000001900000019000000190000002400000024000000180000001800000024000000180000001800000018000000240000001800000019000000180000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b000000000000000b000000180000000c0000000c000000180000000c0000000c0000000c0000000c0000000c000000180000000c0000000c0000000c0000000c0000000c0000000c0000000c0000000c0000000c000000180000000c0000000c0000000c0000000d0000000c0000000c0000000d0000000c000000180000001900000019000000190000001a0000001a00000019000000190000001800000019000000190000001900000018000000190000001900000019000000190000001900000019000000190000001900000019000000180000001900000019000000190000001900000019000000190000001900000019000000190000001800000019000000190000001900000024000000190000001900000019000000180000001800000018000000180000001800000018000000180000001800000017000000170000001800000018000000180000001700000017000000170000001800000018000000180000001800000018000000180000001700000017000000170000001700000018000000180000001800000018000000180000001800000017000000180000001800000017000000170000001700000018000000180000000c000000180000000c0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000001a0000001a0000001a0000001a0000001a0000001a0000001a00000019000000190000001900000019000000240000002400000024000000240000002400000018000000180000001800000018000000180000001800000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000c0000000c00000018000000000000000000000000000000180000000000000000000000000000000b00000000000000180000000b0000000b0000000b000000180000000b0000000b0000000b0000000a0000000b000000180000000a00000024000000180000002400000024000000240000002400000024000000240000002400000024000000240000002400000024000000240000002400000024000000190000002400000019000000190000002400000019000000190000001900000019000000190000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000c0000000d0000000c0000000c0000000c0000000c0000000c0000000c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b000000000000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a00000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000017000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000024000000180000002400000018000000180000001800000018000000170000001700000017000000170000001700000017000000170000001700000017000000170000001700000024000000240000002400000024000000240000002400000024000000240000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a0000001a000000190000001a000000190000001900000019000000190000001900000019000000190000001a0000001a0000001a0000000b0000000b0000000b0000000b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000d0000000c000000170000001700000017000000170000000a0000000a00000024000000180000001800000024000000240000002400000024000000240000002400000024000000240000002400000024000000240000002400000024000000240000002400000025000000240000002400000024000000190000002400000024000000240000001900000024000000250000002400000024000000240000001900000019000000240000002500000024000000240000002400000024000000190000001900000024000000240000002600000026000000240000001a0000001a000000240000002400000026000000190000001a0000001a00000024000000270000001a0000001a0000001a000000240000001a0000001a0000001a00000027000000270000001a0000001a0000001a0000001a00000027000000270000001a0000001a0000001a0000001a000000270000001c0000001a0000001a0000001a0000001a000000270000001c0000001a0000001a0000001a0000000d0000001c0000001c0000001a0000001a0000000d0000000d0000001c0000001a0000001a0000001a0000000d0000000d0000001c0000001a0000001a0000000d0000000d0000000d0000001c0000001a0000001a0000000d0000000d0000000d0000001c0000001a0000000d0000000d0000000d0000000d0000001c0000001a0000000d0000000d0000000d0000000d0000001c0000000d0000000d0000000d0000000d0000000c0000000f0000000d0000000d0000000d0000000d0000000c0000000f0000000d0000000d0000000d0000000c0000000c0000000f0000000f0000000d0000000d00000000000000000000000f0000000f0000000d0000000c00000000000000000000000f0000000f0000000d0000000000000000000000000000000f0000000f000000000000000000000000000000000000000f0000000f000000000000000000000000000000000000000f000000000000000000000000000000000000000b0000000f000000000000000000000000000000000000000b000000000000000000000000000000000000000b0000000b000000000000000000000000000000000000000b0000000b0000000000000000000000000000000b0000000b0000000b0000000000000000000000000000000b0000000b0000000b0000000000000000000000020000000b0000000b0000000a0000000000000002000000020000000b0000000a0000000a0000000000000002000000010000000b0000000a0000000a0000000200000002000000010000000a0000000a0000000a0000000200000001000000010000000a0000000a0000000a00000002000000010000000a0000000a0000000a0000000a00000001000000010000000a0000000a0000000a0000000a00000001000000010000000a0000000a0000000a0000000a000000010000000e0000000a0000000a0000000a0000000a000000010000000e0000000a0000000a0000000a0000000a000000010000000e0000000a0000000a0000000a000000170000000e0000000e0000000a0000000a00000017000000170000000e0000000e0000000a0000000a00000017000000170000000e0000000e0000000a0000001700000017000000170000000e0000000a0000000a0000001700000017000000170000000e0000000a000000170000001700000017000000170000000e0000000a000000170000001700000017000000170000000e00000017000000170000001700000017000000170000000e00000017000000170000001700000017000000170000001b0000001b000000170000001700000017000000170000001b0000001b000000170000001700000017000000170000001b0000001b000000170000001700000017000000180000001b0000001b000000170000001700000018000000180000001b0000001b000000170000001700000018000000180000001b0000001b000000170000001800000018000000180000001b0000001b000000170000001800000018000000180000001b0000001b000000170000001800000018000000180000001800000018000000180000002400000018000000170000001800000018000000240000001800000017000000180000002400000018000000180000001800000025000000250000002500000018000000180000001b00000025000000250000002500000025000000250000002500000025000000250000002500000025000000250000002500000025000000250000001b00000025000000250000002500000025000000250000001b00000025000000250000002500000025000000250000002500000028000000280000002800000028000000280000002800000028000000280000002800000028000000280000002800000022000000220000002200000022000000220000002200000022000000220000002a0000002a0000002a0000002a0000002a000000220000002a0000002a000000280000002a0000002a0000002a0000002800000028000000280000002a0000002a0000002a000000280000002800000028000000280000002a0000002a0000001d00000028000000250000002800000028000000280000001d0000001d0000001d000000250000002800000028000000280000001d0000001d0000001d000000210000001d0000001d0000001d0000001d0000001d000000280000001d0000001d0000001d0000001d0000001d0000001d000000210000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d000000280000001d0000001d00000028000000250000002500000025000000250000002500000025000000250000001b0000001b00000025000000250000001b0000001b0000001b0000001b0000001b0000001b0000001d0000001b0000001b0000001b0000001d0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000001b0000000e0000001b0000001b0000001b0000000e0000000e0000001b0000001b0000000e0000000e0000000e0000001b0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e0000000e000000010000000e0000000e0000000e00000001000000010000000e0000000e000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000002000000010000000100000002000000020000000200000001000000020000000200000002000000020000000200000002000000020000000200000003000000020000000200000002000000030000000300000002000000020000000300000003000000000000000200000003000000030000000300000000000000020000000300000003000000030000000000000003000000030000000300000003000000000000000300000003000000030000000300000000000000030000000300000003000000030000000f0000000300000003000000030000000f0000000f00000003000000030000000f0000000f0000000f000000030000000f0000000f0000000f0000000f000000110000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000000f0000001c0000001c0000000f0000000f0000001c0000001c0000001c0000000f0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c000000270000001c0000001c0000001c00000027000000270000001c0000001c0000002700000027000000270000001c000000270000002700000027000000270000001c00000027000000270000002700000027000000270000002700000027000000270000002600000027000000270000002700000027000000270000002600000027000000260000002700000027000000260000002600000026000000270000002600000025000000260000002500000026000000260000002500000026000000260000002500000026000000250000002800000026000000260000002900000028000000260000002600000029000000280000002600000029000000260000001e000000280000002900000029000000260000001e00000022000000290000002900000029000000270000001e000000220000002900000029000000290000001e000000270000002200000022000000220000001e0000001e0000001e0000001e0000001e0000001e0000001e00000029000000290000001e0000001e0000001e0000001e000000290000001e0000001e000000290000002900000029000000290000001e000000290000002900000029000000290000002900000029000000290000001f0000001f0000001f0000001f0000001f0000001f000000290000001f0000001f000000290000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000002900000029000000290000002700000027000000270000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001c0000001f0000001c0000001c0000001f0000001c0000001f0000001c0000001f0000001c0000001c0000001f0000001f0000001f0000000f0000001c0000001f0000001f0000001f0000001f0000000f0000000f0000001f0000001f0000001f0000001f0000000f0000000f000000120000001f0000001f0000001f0000001f0000000f0000000f00000012000000120000001f0000001f0000000f0000000f0000001200000012000000120000000f0000000f00000012000000120000000f0000000f000000120000001100000011000000110000001200000012000000120000001100000011000000120000001200000011000000110000001100000012000000120000001100000011000000030000001200000012000000110000001100000003000000120000000700000011000000110000000300000012000000110000001100000011000000020000000700000011000000110000001100000002000000070000001100000011000000050000000200000011000000110000001100000005000000050000000600000006000000050000000500000005000000060000000600000005000000050000000400000006000000050000000500000005000000040000000600000005000000050000000400000004000000060000000500000005000000040000000400000005000000050000000400000004000000100000000500000005000000040000000400000010000000050000000500000004000000100000001000000005000000040000000400000010000000100000000500000004000000100000001000000010000000040000000400000010000000100000001000000004000000040000001000000010000000100000000400000010000000100000001000000010000000040000001000000010000000100000001d000000100000001000000010000000100000001d0000001000000010000000100000001d0000001d0000001000000010000000100000001d0000001d00000010000000100000001d0000001d0000001b00000010000000100000001d0000001d0000001b000000100000001d0000001d0000001d0000001b0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d0000001d00000021000000210000001d0000001d0000001d0000001d0000001d00000010000000100000001000000010000000210000001000000010000000140000001400000014000000100000001400000010000000140000001000000010000000140000001000000010000000150000001000000015000000150000001000000015000000150000001500000015000000080000001500000015000000150000000800000008000000080000000900000008000000080000000500000008000000090000000900000008000000090000000900000009000000090000000500000005000000050000000500000009000000090000000500000005000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000007000000070000000700000007000000070000000700000007000000070000001200000007000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001f000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000000d0000000d0000000d0000000d0000000a0000000a0000000a000000000000000c000000000000000a0000000a0000000a0000000b0000000b0000000b0000000a0000000b0000000b0000000a0000000a0000000a0000000a0000000a0000000a00000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000001d0000001d0000002100000021000000210000001d00000021000000210000002100000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000150000001500000015000000150000001500000015000000080000000800000009000000080000000900000009000000090000000900000009000000090000000900000009000000090000000900000006000000060000000600000006000000060000000600000006000000060000000600000006000000070000000700000007000000070000000700000007000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001f000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000002100000021000000210000002100000021000000210000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000001200000012000000120000001200000012000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000001f0000001f0000001f0000001f0000001f0000001f0000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000200000002000000020000000200000002000000020000000200000002000000020000000210000002100000021000000210000002100000021000000210000002100000021000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000023000000230000002300000023000000230000002300000023000000160000001600000016000000160000002300000023000000160000002300000023000000230000002300000023000000230000001600000016000000160000001600000014000000140000001600000014000000140000001400000016000000160000001600000014000000140000001400000016000000160000001600000016000000160000001400000016000000160000001600000016000000160000001600000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000002000000020000000200000002000000020000000130000001300000013000000130000002000000013000000130000001300000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000001300000020000000130000002000000013000000200000001300000020000000130000002000000013000000200000002000000020000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000120000001200000012000000120000001200000012000000120000001200000012000000120000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000230000002300000023000000230000002100000023000000230000002100000023000000230000002100000021000000230000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000013000000130000001200000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000002000000020000000200000002000000020000000200000001f0000001f0000002000000020000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000018000000180000000b0000000b0000000a0000000a000000170000000b000000180000000a0000000a00000017000000170000000a0000000a000000170000001700000017000000170000001700000017000000170000001700000017000000170000000a000000170000000a00000017000000170000001700000017000000170000000a00000017000000170000000a0000000a0000001700000017000000170000001800000018000000180000001800000018000000170000001700000018000000170000001700000018000000180000001700000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000024000000180000001800000018000000180000001800000018000000180000000b0000000b0000000b0000000a0000000b0000000b0000000a0000000b0000000b0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000b0000000a0000000a0000000b000000180000000b0000000a0000000a0000000a0000000a0000000a0000000b0000000b0000000a0000000a0000000b000000180000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b0000000b000000000000000b000000000000000b00000000000000000000000b0000000b000000180000000b0000000b0000000000000000000000000000000b0000000b000000180000000c0000000c000000000000000c00000000000000000000000c000000000000000000000000000000000000000c0000000c0000000c0000000c0000000c0000000c0000000c0000000c0000000c0000000d0000000c0000000d0000000d0000000d0000000d0000000c0000000d0000000d0000000c0000000c000000180000000c0000000c0000000c0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000c0000000c0000000d0000001a0000001a0000001a0000001a0000001a0000001a0000000c0000000c00000018000000190000001a0000001a0000001a0000001a0000001a0000001a000000190000001900000018000000190000001a0000001a0000001a0000001a0000001900000019000000190000001a0000001a0000001900000019000000190000001900000019000000190000001900000019000000190000001900000019000000190000001900000019000000190000002400000019000000180000001900000019000000190000002400000024000000240000001900000019000000240000002400000019000000240000002400000024000000240000002400000024000000240000002400000018000000240000001800000018000000180000002400000018000000190000000a0000000a0000000b0000000b000000180000000b0000000b0000000b0000000b0000000b0000000b000000180000000b0000000b0000000b0000000b0000000b0000000b000000180000000b0000000b0000000b000000180000000c0000000c0000000c0000000c0000000c0000000c000000180000000c0000000c0000000c0000000c0000000c0000000c0000000c000000180000000c0000000c0000000c0000000d0000000d0000000c0000000c000000180000001900000019000000190000001a0000001a000000180000001900000019000000190000001900000019000000190000001900000018000000190000001900000019000000190000001900000019000000190000001900000019000000180000001900000019000000190000002400000019000000190000002400000019000000240000001900000019000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000018000000180000001800000017000000180000001800000018000000180000001800000018000000170000001700000017000000180000001800000017000000180000001800000018000000180000001700000017000000170000001800000018000000170000001800000018000000180000001800000017000000180000001800000017000000170000001700000018000000180000000a000000180000000a0000000a0000000a0000000a0000000a0000000a0000000a0000000a00000017000000170000001700000017000000170000001700000017000000170000001700000017000000170000001800000018000000180000001800000018000000180000002400000024000000240000002400000024000000190000001900000019000000190000001a0000001a0000001a0000001a0000001a0000001a0000001a0000000d0000000d0000000d0000000d0000000d0000000d0000000d0000000c0000000c0000000a0000000a000000180000000b0000000b0000000b000000180000000b0000000b0000000b0000000b0000000b00000018000000000000000000000000000000180000000000000000000000000000000c00000000000000180000000c000000090000000900000009000000090000000900000009000000090000000600000006000000060000000600000006000000060000000600000006000000060000000600000007000000070000000700000007000000070000000700000012000000120000001f0000001f0000001f0000001f0000001f0000001f00000029000000290000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e0000001e00000022000000220000002200000022000000220000002200000022000000220000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000002a0000001d000000210000001d00000021000000210000002100000021000000210000002100000021000000210000001400000014000000210000002100000014000000140000002100000021000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001f0000001f000000120000001200000012000000120000001200000012000000120000001200000012000000120000001f0000001f00000012000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000023000000230000001600000016000000230000002300000016000000160000001600000016000000140000001400000016000000160000001600000016000000160000001600000016000000160000001600000016000000140000001400000016000000160000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000140000001400000016000000160000001400000014000000160000001600000016000000160000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000012000000120000001200000012000000120000001200000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f00000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000210000002300000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000023000000230000002300000023000000230000002300000023000000230000002300000023000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002300000023000000230000002100000021000000210000002100000021000000210000002100000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000001600000016000000160000002000000020000000200000002000000020000000200000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000012000000120000001200000013000000120000001200000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000013000000130000001300000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f000000120000001200000012000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000002000000020000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000210000002100000021000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000120000001200000012000000120000001f0000001f0000001f0000001f0000001f0000001f0000001f0000001f0000000d0000000c0000000c000000180000000c0000000c000000190000001900000019000000190000001800000019000000180000001800000018000000180000001800000018000000180000000c0000000c0000000c0000000c000000180000000c000000190000001900000019000000190000001800000019000000
+  particleType: 04000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000040000000400000004000000
