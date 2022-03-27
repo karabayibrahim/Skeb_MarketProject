@@ -24,5 +24,9 @@ public class ProductManager : MonoBehaviour
                 Products.Add(item.gameObject);
             }
         }
+        foreach (var item in Products)
+        {
+            item.GetComponent<Product>().LastObjectControl();
+        }
     }
 }

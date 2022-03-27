@@ -33,6 +33,10 @@ public class Fall : MonoBehaviour
             {
                 Destroy(other.gameObject, 2f);
             }
+            if (other.gameObject.GetComponent<Product>().LastObject)
+            {
+                GameManager.FailAction?.Invoke();
+            }
             
         }
     }

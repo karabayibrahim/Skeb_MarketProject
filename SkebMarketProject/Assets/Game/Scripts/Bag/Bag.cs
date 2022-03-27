@@ -6,10 +6,16 @@ public class Bag : MonoBehaviour
 {
     public List<Product> MyProducts = new List<Product>();
     [SerializeField] private Material myMaterial;
+    [SerializeField] private Material deformMaterial;
     [SerializeField] private int _productCount;
+    [SerializeField] private float materialValue;
+    [SerializeField] private int deformationValue;
     [SerializeField] private GameObject objMain;
     [SerializeField] private GameObject objLeft;
     [SerializeField] private GameObject objRight;
+
+
+    public Vector3 MyPosition;
 
     public int ProductCount
     {
@@ -24,8 +30,10 @@ public class Bag : MonoBehaviour
                 return;
             }
             _productCount= value;
-            myMaterial.color = new Color(myMaterial.color.r, myMaterial.color.g - 0.5f, myMaterial.color.b-0.5f,myMaterial.color.a);
-            if (ProductCount > 3f)
+            materialValue= Mathf.InverseLerp(0, deformationValue, ProductCount);
+            myMaterial.Lerp(myMaterial, deformMaterial, materialValue);
+            //myMaterial.color = new Color(myMaterial.color.r, myMaterial.color.g - 0.5f, myMaterial.color.b-0.5f,myMaterial.color.a);
+            if (ProductCount > deformationValue)
             {
                 objMain.GetComponent<SkinnedMeshRenderer>().enabled = false;
                 objLeft.SetActive(true);
@@ -34,6 +42,7 @@ public class Bag : MonoBehaviour
                 {
                     item.GetComponent<ObiRigidbody>().kinematicForParticles = true;
                 }
+                GameManager.FailAction?.Invoke();
                 //foreach (var item in MyProducts)
                 //{
                 //    item.GetComponent<Rigidbody>().mass = 10f;
@@ -45,6 +54,7 @@ public class Bag : MonoBehaviour
     void Start()
     {
         //transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        MyPosition = transform.position;
         GameManager.Instance.Bag = GetComponent<Bag>();
         myMaterial = GetComponentInChildren<SkinnedMeshRenderer>().material;
     }
@@ -64,6 +74,7 @@ public class Bag : MonoBehaviour
             {
                 other.gameObject.transform.SetParent(gameObject.transform);
                 MyProducts.Add(other.gameObject.GetComponent<Product>());
+                GameManager.Instance.PlayerController.MyBagCount += other.gameObject.GetComponent<Product>().MyAmount;
                 ProductCount++;
                 other.gameObject.GetComponent<Product>().Fall = false;
             }

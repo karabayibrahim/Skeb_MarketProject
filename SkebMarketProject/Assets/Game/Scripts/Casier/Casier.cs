@@ -5,12 +5,14 @@ using DG.Tweening;
 using SA;
 public class Casier : MonoBehaviour
 {
-    private Animator _anim;
+    //private Animator _anim;
     [SerializeField] private GameObject _selectObject;
     [SerializeField] private Transform _target;
     [SerializeField] private Transform _target2;
     [SerializeField] private GameObject LeftHand;
     [SerializeField] private GameObject RightHand;
+    [SerializeField] private GameObject LeftElbow;
+    [SerializeField] private GameObject RightElbow;
     [SerializeField] private GameObject Head;
     private bool _lefthand = false;
     private bool _righthand = false;
@@ -21,7 +23,9 @@ public class Casier : MonoBehaviour
 
     void Start()
     {
-        _anim = GetComponent<Animator>();
+        LeftHand.transform.eulerAngles = new Vector3(0, -45, 30);
+        RightHand.transform.eulerAngles = new Vector3(0, 90, -30);
+        //_anim = GetComponent<Animator>();
         ObjectSelect();
     }
 
@@ -37,6 +41,7 @@ public class Casier : MonoBehaviour
         {
             //LeftHand.transform.position = _selectObject.transform.position;
             left = LeftHand.transform.DOMove(new Vector3(_selectObject.transform.position.x, _selectObject.transform.position.y + 0.1f, _selectObject.transform.position.z), 0.1f);
+            //LeftElbow.transform.DOMove(new Vector3(_selectObject.transform.position.x, _selectObject.transform.position.y + 0.1f, _selectObject.transform.position.z), 0.1f);
         }
         else
         {
@@ -46,6 +51,7 @@ public class Casier : MonoBehaviour
         {
             //RightHand.transform.position = _selectObject.transform.position;
             right = RightHand.transform.DOMove(new Vector3(_selectObject.transform.position.x, _selectObject.transform.position.y+0.1f, _selectObject.transform.position.z), 0.1f);
+            //RightElbow.transform.DOMove(new Vector3(_selectObject.transform.position.x, _selectObject.transform.position.y + 0.1f, _selectObject.transform.position.z), 0.1f);
         }
         else
         {
@@ -74,7 +80,7 @@ public class Casier : MonoBehaviour
             _selectObject = GameManager.Instance.CurrentLevel.ProductManager.Products[0].gameObject;
             GameManager.Instance.CurrentLevel.ProductManager.Products.Remove(GameManager.Instance.CurrentLevel.ProductManager.Products[0]);
             _lefthand = true;
-            LeftHand.transform.rotation = new Quaternion(0, -90f, 0, 0);
+            //LeftHand.transform.rotation = new Quaternion(0, -90f, 0, 0);
             _selectObject.transform.DOMove(_target.transform.position, 1f).OnComplete(() =>
             {
                 int rndTarget = Random.Range(0, GameManager.Instance.CurrentLevel.Targets.Count);
@@ -84,7 +90,7 @@ public class Casier : MonoBehaviour
                 left.Kill();
                 LeftHand.transform.DOLocalMove(leftPos.localPosition, 0.5f);
                 _righthand = true;
-                RightHand.transform.eulerAngles = new Vector3(0, -90f, 0);
+                //RightHand.transform.eulerAngles = new Vector3(0, -90f, 0);
                 _selectObject.transform.DOMove(_target2.transform.position, 1f).OnComplete(() =>
                 {
                     _righthand = false;

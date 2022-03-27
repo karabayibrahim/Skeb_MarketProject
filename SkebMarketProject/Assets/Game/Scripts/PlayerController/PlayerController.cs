@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator _anim;
     [SerializeField] private Transform _productPosition;
     [SerializeField] private GameObject Hand;
+    [SerializeField] private float myBagCount;
+    [SerializeField] private float targetAmount;
+    [SerializeField] private int bagRight = 3;
     public float HorizontalSpeed;
     public float VerticalSpeed;
     [SerializeField] private float _movementClampNegative;
@@ -16,7 +19,50 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _movementClampPositiveVer;
     void Start()
     {
+        GameManager.Instance.UIManager.PlayerMoneyText.text = MyBagCount.ToString() + "$";
+    }
 
+    public float MyBagCount
+    {
+        get
+        {
+            return myBagCount;
+        }
+        set
+        {
+            if (MyBagCount==value)
+            {
+                return;
+            }
+            myBagCount = value;
+            GameManager.Instance.UIManager.PlayerMoneyText.text = MyBagCount.ToString() + "$";
+            if (MyBagCount==targetAmount)
+            {
+                GameManager.WinAction?.Invoke();
+            }
+        }
+    }
+
+    public int BagRight
+    {
+        get
+        {
+            return bagRight;
+        }
+        set
+        {
+            if (BagRight==value)
+            {
+                return;
+            }
+            bagRight = value;
+            GameManager.Instance.UIManager.BagRightText.text = BagRight.ToString();
+            if (BagRight <= 0)
+            {
+                GameManager.Instance.UIManager.ChangeButton.enabled = false;
+            }
+
+        }
     }
 
     // Update is called once per frame

@@ -9,14 +9,14 @@ public class Product : MonoBehaviour
     public bool InTake = false;
     public bool InBag = false;
     public bool Fall = false;
-    private float _zValue;
+    public bool LastObject = false;
     private float rnd;
     [SerializeField] private ProductType _myProductType;
-    [SerializeField] private float _myAmount;
+    public float MyAmount;
     private Rigidbody _rb;
     void Start()
     {
-        _zValue=Random.Range(-0.1f, 0.1f);
+        //_zValue=Random.Range(-0.1f, 0.1f);
         rnd= Random.Range(-5,5);
         _rb = GetComponent<Rigidbody>();
     }
@@ -57,14 +57,24 @@ public class Product : MonoBehaviour
     {
         if (other.gameObject.tag == "Product")
         {
-            gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-            other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-
+            if (InBag==true)
+            {
+                gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+            }
         }
     }
 
     public void BuyMethod()
     {
-        GameManager.Instance.CaseSystem.TextWrite(_myAmount);
+        GameManager.Instance.CaseSystem.TextWrite(MyAmount);
+    }
+
+    public void LastObjectControl()
+    {
+        if (gameObject == GameManager.Instance.CurrentLevel.ProductManager.Products[GameManager.Instance.CurrentLevel.ProductManager.Products.Count - 1])
+        {
+            LastObject = true;
+        }
     }
 }
