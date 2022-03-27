@@ -99,6 +99,7 @@ public class Casier : MonoBehaviour
                     RightHand.transform.DOLocalMove(rightPos.localPosition, 0.5f);
                     _selectObject.GetComponent<Product>().Move = true;
                     _selectObject.GetComponent<Rigidbody>().isKinematic = false;
+                    _selectObject.GetComponent<Product>().Takeable = true;
                     if (GameManager.Instance.CurrentLevel.ProductManager.Products.Count > 0)
                     {
                         ObjectSelect();

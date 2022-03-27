@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -689,6 +689,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kinematicForParticles: 0
+--- !u!1 &176434391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 176434393}
+  - component: {fileID: 176434392}
+  m_Layer: 0
+  m_Name: OniCollisionWorld
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &176434392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176434391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02d25c24c8574316883c920912e4fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &176434393
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176434391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &221766117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -7823,7 +7866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -7927,7 +7970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -8107,7 +8150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -8287,7 +8330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -9071,7 +9114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -9415,7 +9458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -10293,7 +10336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -10684,7 +10727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -10905,49 +10948,6 @@ MonoBehaviour:
   _movementClampPositive: 0.4
   _movementClampNegativeVer: -2.5
   _movementClampPositiveVer: -0.3
---- !u!1 &1585490102
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1585490104}
-  - component: {fileID: 1585490103}
-  m_Layer: 0
-  m_Name: OniCollisionWorld
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1585490103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585490102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d02d25c24c8574316883c920912e4fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1585490104
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585490102}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1613726358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11454,7 +11454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -11753,7 +11753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -11857,7 +11857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -12114,7 +12114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -12629,7 +12629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -13074,7 +13074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -13207,7 +13207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Move: 0
-  Takeable: 1
+  Takeable: 0
   InTake: 0
   InBag: 0
   Fall: 0
@@ -13657,6 +13657,11 @@ PrefabInstance:
         type: 3}
       propertyPath: deformationValue
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 293856616771395009, guid: 0403e0c30131aa344bc72361e1856788,
+        type: 3}
+      propertyPath: firstMaterial
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 293856616771395011, guid: 0403e0c30131aa344bc72361e1856788,
         type: 3}

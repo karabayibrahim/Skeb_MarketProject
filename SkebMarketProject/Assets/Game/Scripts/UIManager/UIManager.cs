@@ -77,6 +77,7 @@ public class UIManager : MonoBehaviour
     private IEnumerator ChangeBagTimer()
     {
         yield return new WaitForSeconds(0.5f);
+        GameManager.Instance.Bag.ResetMaterialColor();
         foreach (var item in GameManager.Instance.Bag.MyProducts)
         {
             Destroy(item.gameObject);

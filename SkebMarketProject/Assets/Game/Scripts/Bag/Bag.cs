@@ -5,6 +5,7 @@ using Obi;
 public class Bag : MonoBehaviour
 {
     public List<Product> MyProducts = new List<Product>();
+    [SerializeField] private Material firstMaterial;
     [SerializeField] private Material myMaterial;
     [SerializeField] private Material deformMaterial;
     [SerializeField] private int _productCount;
@@ -29,8 +30,8 @@ public class Bag : MonoBehaviour
             {
                 return;
             }
-            _productCount= value;
-            materialValue= Mathf.InverseLerp(0, deformationValue, ProductCount);
+            _productCount = value;
+            materialValue = Mathf.InverseLerp(0, deformationValue, ProductCount);
             myMaterial.Lerp(myMaterial, deformMaterial, materialValue);
             //myMaterial.color = new Color(myMaterial.color.r, myMaterial.color.g - 0.5f, myMaterial.color.b-0.5f,myMaterial.color.a);
             if (ProductCount > deformationValue)
@@ -57,12 +58,13 @@ public class Bag : MonoBehaviour
         MyPosition = transform.position;
         GameManager.Instance.Bag = GetComponent<Bag>();
         myMaterial = GetComponentInChildren<SkinnedMeshRenderer>().material;
+        firstMaterial = Instantiate(myMaterial);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -78,7 +80,7 @@ public class Bag : MonoBehaviour
                 ProductCount++;
                 other.gameObject.GetComponent<Product>().Fall = false;
             }
-            
+
         }
     }
 
@@ -94,7 +96,7 @@ public class Bag : MonoBehaviour
         //GetComponentInChildren<ObiSoftbody>().plasticRecovery = 1f;
         //GetComponentInChildren<ObiSoftbody>().plasticYield = 1f;
         yield return new WaitForSeconds(0.5f);
-        GetComponent<ObiSolver>().gravity = new Vector3(0,0, 0);
+        GetComponent<ObiSolver>().gravity = new Vector3(0, 0, 0);
         //GetComponent<ObiSolver>().parameters.damping = 1f;
         //GetComponentInChildren<ObiSoftbody>().plasticCreep = 0;
         //GetComponentInChildren<ObiSoftbody>().plasticRecovery = 0;
@@ -102,5 +104,13 @@ public class Bag : MonoBehaviour
         //yield return new WaitForSeconds(0.1f);
         //GetComponent<ObiSolver>().parameters.damping = 0.01f;
         yield break;
+    }
+
+    public void ResetMaterialColor()
+    {
+        Debug.Log("MaterialAded");
+        myMaterial = firstMaterial;
+        firstMaterial = Instantiate(myMaterial);
+        GetComponentInChildren<SkinnedMeshRenderer>().material = myMaterial;
     }
 }
