@@ -11,18 +11,24 @@ public class UIManager : MonoBehaviour
 {
     public Button ChangeButton;
     public Button RestartButton;
+    public Button TapButton;
+    public Button NextButton;
     public TMP_Text BagRightText;
     public TMP_Text PlayerMoneyText;
     public GameObject WinPanel;
     public GameObject FailPanel;
+    public GameObject GameStartPanel;
+    public GameObject InGamePanel;
     void Start()
     {
         BagRightText.text = GameManager.Instance.PlayerController.BagRight.ToString();
         ChangeButton.onClick.AddListener(ChangeBag);
         RestartButton.onClick.AddListener(RestartStatus);
+        TapButton.onClick.AddListener(TapStartStatus);
+        NextButton.onClick.AddListener(NextStatus);
         GameManager.WinAction += WinStatus;
         GameManager.FailAction += FailStatus;
-        Time.timeScale = 1;
+        Time.timeScale = 0;
     }
 
     private void OnDisable()
@@ -60,13 +66,28 @@ public class UIManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         FailPanel.SetActive(true);
-        Time.timeScale = 0;
+        GameManager.Instance.PlayerController.enabled = false;
+
     }
+
+    public void TapStartStatus()
+    {
+        Time.timeScale = 1;
+        GameStartPanel.SetActive(false);
+        InGamePanel.SetActive(true);
+        
+    }
+
+    public void NextStatus()
+    {
+
+    }
+    
 
     public void WinStatus()
     {
         WinPanel.SetActive(true);
-        Time.timeScale = 0;
+        GameManager.Instance.PlayerController.enabled = false;
     }
 
     public void RestartStatus()
