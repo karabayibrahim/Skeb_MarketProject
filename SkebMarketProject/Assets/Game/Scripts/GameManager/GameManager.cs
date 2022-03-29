@@ -10,6 +10,7 @@ public class GameManager : MonoSingleton<GameManager>
     public GameObject Band;
     public UIManager UIManager;
     public PlayerController PlayerController;
+    public Casier Casier;
     public static Action FailAction;
     public static Action WinAction;
 

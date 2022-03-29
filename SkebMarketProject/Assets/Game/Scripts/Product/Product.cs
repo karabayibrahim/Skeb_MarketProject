@@ -77,4 +77,18 @@ public class Product : MonoBehaviour
             LastObject = true;
         }
     }
+
+    public void TypeRotation()
+    {
+        switch (_myProductType)
+        {
+            case ProductType.CANDY:
+                break;
+            case ProductType.SALMON:
+                gameObject.transform.eulerAngles = new Vector3(-5,72,-30);
+                break;
+            default:
+                break;
+        }
+    }
 }

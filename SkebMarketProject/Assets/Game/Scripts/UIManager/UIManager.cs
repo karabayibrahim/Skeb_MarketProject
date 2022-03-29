@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour
     {
         GameManager.Instance.Bag.GetComponent<ObiSolver>().gravity = new Vector3(0, -10, 0);
         StartCoroutine(ChangeBagTimer());
-        GameManager.Instance.Bag.transform.DOMoveZ(-1.6f, 1f).SetLoops(2, LoopType.Yoyo).OnComplete(() =>
+        GameManager.Instance.Bag.transform.DOMoveZ(-1.6f, 1f).SetEase(Ease.InOutExpo).SetLoops(2, LoopType.Yoyo).OnComplete(() =>
         {
             GameManager.Instance.PlayerController.BagRight--;
             GameManager.Instance.Bag.MyProducts.Clear();
@@ -67,7 +67,7 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         FailPanel.SetActive(true);
         GameManager.Instance.PlayerController.enabled = false;
-
+        GameManager.Instance.Casier.enabled = false;
     }
 
     public void TapStartStatus()
@@ -88,6 +88,7 @@ public class UIManager : MonoBehaviour
     {
         WinPanel.SetActive(true);
         GameManager.Instance.PlayerController.enabled = false;
+        GameManager.Instance.Casier.enabled = false;
     }
 
     public void RestartStatus()
@@ -98,10 +99,13 @@ public class UIManager : MonoBehaviour
     private IEnumerator ChangeBagTimer()
     {
         yield return new WaitForSeconds(0.5f);
+        GameManager.Instance.Bag.gameObject.SetActive(false);
         GameManager.Instance.Bag.ResetMaterialColor();
         foreach (var item in GameManager.Instance.Bag.MyProducts)
         {
             Destroy(item.gameObject);
         }
+        yield return new WaitForSeconds(0.5f);
+        GameManager.Instance.Bag.gameObject.SetActive(true);
     }
 }

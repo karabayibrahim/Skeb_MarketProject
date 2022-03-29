@@ -67381,11 +67381,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyProducts: []
+  firstMaterial: {fileID: 0}
   myMaterial: {fileID: 0}
+  deformMaterial: {fileID: 2100000, guid: ab468e1e1328c914db8257473362ec89, type: 2}
   _productCount: 0
+  materialValue: 0
+  deformationValue: 10
   objMain: {fileID: 2789576718807546075}
   objLeft: {fileID: 9170732214754239866}
   objRight: {fileID: 7104073825585698468}
+  MyPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &8999924201905791553
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -80,6 +80,7 @@ public class Casier : MonoBehaviour
             _selectObject = GameManager.Instance.CurrentLevel.ProductManager.Products[0].gameObject;
             GameManager.Instance.CurrentLevel.ProductManager.Products.Remove(GameManager.Instance.CurrentLevel.ProductManager.Products[0]);
             _lefthand = true;
+            _selectObject.GetComponent<Product>().TypeRotation();
             //LeftHand.transform.rotation = new Quaternion(0, -90f, 0, 0);
             _selectObject.transform.DOMove(_target.transform.position, 1f).OnComplete(() =>
             {
@@ -88,7 +89,7 @@ public class Casier : MonoBehaviour
                 _lefthand = false;
                 _selectObject.GetComponent<Product>().BuyMethod();
                 left.Kill();
-                LeftHand.transform.DOLocalMove(leftPos.localPosition, 0.5f);
+                LeftHand.transform.DOLocalMove(leftPos.localPosition, 1f);
                 _righthand = true;
                 //RightHand.transform.eulerAngles = new Vector3(0, -90f, 0);
                 _selectObject.transform.DOMove(_target2.transform.position, 1f).OnComplete(() =>
@@ -96,7 +97,7 @@ public class Casier : MonoBehaviour
                     _righthand = false;
                     right.Kill();
                     //RightHand.transform.localPosition = rightPos.localPosition;
-                    RightHand.transform.DOLocalMove(rightPos.localPosition, 0.5f);
+                    RightHand.transform.DOLocalMove(rightPos.localPosition, 1f);
                     _selectObject.GetComponent<Product>().Move = true;
                     _selectObject.GetComponent<Rigidbody>().isKinematic = false;
                     _selectObject.GetComponent<Product>().Takeable = true;
