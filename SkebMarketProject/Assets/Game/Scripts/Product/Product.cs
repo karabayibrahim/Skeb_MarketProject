@@ -91,4 +91,18 @@ public class Product : MonoBehaviour
                 break;
         }
     }
+
+    public void FallRotation()
+    {
+        switch (_myProductType)
+        {
+            case ProductType.CANDY:
+                break;
+            case ProductType.SALMON:
+                gameObject.transform.eulerAngles = new Vector3(-90, 0,0);
+                break;
+            default:
+                break;
+        }
+    }
 }

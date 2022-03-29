@@ -163,6 +163,7 @@ public class PlayerController : MonoBehaviour
             _anim.SetBool("Take", false);
             _myProduct.Takeable = false;
             _myProduct.Fall = true;
+            _myProduct.GetComponent<Product>().FallRotation();
             _myProduct.GetComponent<Rigidbody>().isKinematic = false;
             _myProduct.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
             _myProduct.GetComponent<Collider>().enabled = true;
