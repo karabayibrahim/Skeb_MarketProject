@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform _productPosition;
     [SerializeField] private GameObject Hand;
     [SerializeField] private float myBagCount;
-    [SerializeField] private float targetAmount;
     [SerializeField] private int bagRight = 3;
     public float HorizontalSpeed;
     public float VerticalSpeed;
@@ -36,9 +35,10 @@ public class PlayerController : MonoBehaviour
             }
             myBagCount = value;
             GameManager.Instance.UIManager.PlayerMoneyText.text = MyBagCount.ToString() + "$";
-            if (MyBagCount==targetAmount)
+            if (MyBagCount==GameManager.Instance.CurrentLevel.TargetAmount)
             {
                 GameManager.WinAction?.Invoke();
+                GameManager.Instance.GameStatus = GameStatus.WIN;
             }
         }
     }

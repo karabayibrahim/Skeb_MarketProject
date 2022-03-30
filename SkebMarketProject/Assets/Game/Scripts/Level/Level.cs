@@ -6,6 +6,9 @@ public class Level : MonoBehaviour
 {
     public ProductManager ProductManager;
     public List<Transform> Targets = new List<Transform>();
+    public Transform Target1;
+    public Transform Target2;
+    public float TargetAmount;
     void Start()
     {
         

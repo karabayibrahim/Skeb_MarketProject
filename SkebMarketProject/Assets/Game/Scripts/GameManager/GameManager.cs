@@ -11,13 +11,33 @@ public class GameManager : MonoSingleton<GameManager>
     public UIManager UIManager;
     public PlayerController PlayerController;
     public Casier Casier;
+    public GameStatus GameStatus;
     public static Action FailAction;
     public static Action WinAction;
+    public LevelData LevelData;
+    [SerializeField] private int _levelIndex;
 
     private float scrollSpeed = 0.1f;
-    void Start()
+    void Awake()
     {
-       
+        CreateLevel();
+    }
+
+    public int LevelIndex
+    {
+        get
+        {
+            return _levelIndex;
+        }
+        set
+        {
+            if (LevelIndex==value)
+            {
+                return;
+            }
+            _levelIndex = value;
+            CreateLevel();
+        }
     }
 
     // Update is called once per frame
@@ -31,5 +51,12 @@ public class GameManager : MonoSingleton<GameManager>
         float offset = 0f;
         offset -= Time.time * scrollSpeed;
         Band.GetComponent<Renderer>().material.SetTextureOffset("_MainTex", new Vector2(offset, 0));
+    }
+
+    private void CreateLevel()
+    {
+        //Instantiate(LevelData.Levels[LevelIndex]);
+        Bag = FindObjectOfType<Bag>();
+        CurrentLevel = FindObjectOfType<Level>();
     }
 }

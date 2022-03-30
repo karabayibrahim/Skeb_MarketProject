@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Obi;
+using DG.Tweening;
 public class Bag : MonoBehaviour
 {
     public List<Product> MyProducts = new List<Product>();
@@ -44,10 +45,17 @@ public class Bag : MonoBehaviour
                     item.GetComponent<ObiRigidbody>().kinematicForParticles = true;
                 }
                 GameManager.FailAction?.Invoke();
+                GameManager.Instance.GameStatus = GameStatus.FAIL;
                 //foreach (var item in MyProducts)
                 //{
                 //    item.GetComponent<Rigidbody>().mass = 10f;
                 //}
+            }
+            if (ProductCount == deformationValue)
+            {
+                GameManager.Instance.UIManager.ChangeImage.gameObject.SetActive(true);
+                GameManager.Instance.UIManager.ChangeImage.transform.DOScale(1.5f, 0.5f).SetLoops(-1, LoopType.Yoyo);
+
             }
         }
     }

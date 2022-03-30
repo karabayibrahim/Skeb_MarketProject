@@ -19,8 +19,10 @@ public class Product : MonoBehaviour
         //_zValue=Random.Range(-0.1f, 0.1f);
         rnd= Random.Range(-5,5);
         _rb = GetComponent<Rigidbody>();
+        LastObjectControl();
     }
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -72,10 +74,14 @@ public class Product : MonoBehaviour
 
     public void LastObjectControl()
     {
-        if (gameObject == GameManager.Instance.CurrentLevel.ProductManager.Products[GameManager.Instance.CurrentLevel.ProductManager.Products.Count - 1])
+        if (GameManager.Instance.CurrentLevel!=null)
         {
-            LastObject = true;
+            if (gameObject == GameManager.Instance.CurrentLevel.ProductManager.Products[GameManager.Instance.CurrentLevel.ProductManager.Products.Count - 1])
+            {
+                LastObject = true;
+            }
         }
+        
     }
 
     public void TypeRotation()

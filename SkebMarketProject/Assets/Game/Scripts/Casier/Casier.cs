@@ -26,6 +26,7 @@ public class Casier : MonoBehaviour
         LeftHand.transform.eulerAngles = new Vector3(0, -45, 30);
         RightHand.transform.eulerAngles = new Vector3(0, 90, -30);
         //_anim = GetComponent<Animator>();
+        _target = GameManager.Instance.CurrentLevel.Target1;
         ObjectSelect();
     }
 
@@ -75,7 +76,7 @@ public class Casier : MonoBehaviour
     }
     private void ObjectSelect()
     {
-        if (GameManager.Instance.CurrentLevel.ProductManager.Products.Count>0)
+        if (GameManager.Instance.CurrentLevel.ProductManager.Products.Count>0&&GameManager.Instance.CurrentLevel!=null)
         {
             _selectObject = GameManager.Instance.CurrentLevel.ProductManager.Products[0].gameObject;
             GameManager.Instance.CurrentLevel.ProductManager.Products.Remove(GameManager.Instance.CurrentLevel.ProductManager.Products[0]);

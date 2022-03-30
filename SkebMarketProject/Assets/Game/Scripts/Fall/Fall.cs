@@ -36,6 +36,7 @@ public class Fall : MonoBehaviour
             if (other.gameObject.GetComponent<Product>().LastObject)
             {
                 GameManager.FailAction?.Invoke();
+                GameManager.Instance.GameStatus = GameStatus.FAIL;
             }
             
         }

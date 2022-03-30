@@ -80,11 +80,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyProducts: []
+  firstMaterial: {fileID: 0}
   myMaterial: {fileID: 0}
+  deformMaterial: {fileID: 2100000, guid: ab468e1e1328c914db8257473362ec89, type: 2}
   _productCount: 0
+  materialValue: 0
+  deformationValue: 7
   objMain: {fileID: 5136662446274459821}
   objLeft: {fileID: 7347025169324393293}
   objRight: {fileID: 861155113269391129}
+  MyPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &293856616771395008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160319,6 +160324,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.3333316
       objectReference: {fileID: 0}
+    - target: {fileID: -1862318188995912264, guid: d3287a2f5bb98034ab8612dd091ce4bb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f14b449ce8d4864885e16c9fc0837f1, type: 2}
     - target: {fileID: 919132149155446097, guid: d3287a2f5bb98034ab8612dd091ce4bb,
         type: 3}
       propertyPath: m_Name
