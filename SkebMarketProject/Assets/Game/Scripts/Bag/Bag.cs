@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Obi;
 using DG.Tweening;
+using TapticPlugin;
 public class Bag : MonoBehaviour
 {
     public List<Product> MyProducts = new List<Product>();
@@ -87,6 +88,8 @@ public class Bag : MonoBehaviour
                 GameManager.Instance.PlayerController.MyBagCount += other.gameObject.GetComponent<Product>().MyAmount;
                 ProductCount++;
                 other.gameObject.GetComponent<Product>().Fall = false;
+                if (PlayerPrefs.GetInt("onOrOffVibration") == 1)
+                    TapticManager.Impact(ImpactFeedback.Light);
             }
 
         }

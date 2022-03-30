@@ -102,11 +102,12 @@ public class UIManager : MonoBehaviour
     public void NextStatus()
     {
         PlayerPrefs.SetInt("LevelIndex", (PlayerPrefs.GetInt("LevelIndex") + 1));
-        Debug.Log(PlayerPrefs.GetInt("LevelIndex"));
+        //Debug.Log(PlayerPrefs.GetInt("LevelIndex"));
 
-        SceneManager.LoadScene(PlayerPrefs.GetInt("LevelIndex"));
+        SceneManager.LoadScene("Level" + PlayerPrefs.GetInt("LevelIndex"));
+
     }
-    
+
 
     public void WinStatus()
     {

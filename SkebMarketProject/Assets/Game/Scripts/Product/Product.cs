@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TapticPlugin;
 public class Product : MonoBehaviour
 {
     public bool Move = false;
@@ -10,6 +11,7 @@ public class Product : MonoBehaviour
     public bool InBag = false;
     public bool Fall = false;
     public bool LastObject = false;
+    public bool CounterControl = false;
     private float rnd;
     [SerializeField] private ProductType _myProductType;
     public float MyAmount;
@@ -57,12 +59,25 @@ public class Product : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Product")
+        if (other.gameObject.tag == "Product"&&!CounterControl)
         {
             if (InBag==true)
             {
                 gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-                other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                other.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
+                
+            }
+            else
+            {
+                if (other.gameObject.GetComponent<Product>().InBag==true||other.gameObject.GetComponent<Product>().CounterControl==true)
+                {
+                    GameManager.Instance.Bag.ProductCount++;
+                    GameManager.Instance.Bag.MyProducts.Add(this);
+                    CounterControl = true;
+                    if (PlayerPrefs.GetInt("onOrOffVibration") == 1)
+                        TapticManager.Impact(ImpactFeedback.Light);
+                }
+                
             }
         }
     }
@@ -106,6 +121,9 @@ public class Product : MonoBehaviour
                 break;
             case ProductType.SALMON:
                 gameObject.transform.eulerAngles = new Vector3(-90, 0,0);
+                break;
+            case ProductType.SALAMI:
+                gameObject.transform.eulerAngles = new Vector3(0, 0, 90);
                 break;
             default:
                 break;

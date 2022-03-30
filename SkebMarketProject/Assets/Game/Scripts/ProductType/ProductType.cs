@@ -6,4 +6,5 @@ public enum ProductType
 {
     CANDY,
     SALMON,
+    SALAMI,
 }
